@@ -1381,6 +1381,16 @@ footer {
     background-position: center;
   }
 
+  #search{
+    padding:20px;
+  }
+
+  .iconSizemap{
+    font-size:20px
+  }
+
+
+
   .iconSize{
     width: 50px;
     height: 50px;
@@ -1770,6 +1780,582 @@ footer {
     align-content: flex-start;
     flex-flow: column;
     justify-content: flex-start;
+  }
+
+  .Apropos {
+    padding: 0;
+    margin: 20px;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .tailleBlocFoot {
+    padding: 0;
+    margin: 20px;
+  }
+}
+
+
+/*********vVersion iPad**********/
+@media screen and (min-width: 501px) and (max-width: 768px) {
+  body {
+    font-size: 0.9em;
+    width: 100%;
+    font-weight: 600;
+  }
+
+  .page {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    margin:0;
+    width: 100%;
+    height: 90px;
+    
+    flex-flow: row;
+    display: flex;
+
+    border-bottom: 4px solid #f2f2f2;
+  }
+  .logo{
+    margin: 30px;
+  }
+
+  .nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  a.nav_a {
+    margin: 0;
+    padding: 13px 20px;
+  }
+
+  .flexColumnBetween a:hover {
+    border-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--clrBleu);
+    width: 160px;
+  }
+
+
+  .bloc_headerel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .vacances {
+    width: auto;
+    height: auto;
+    margin: 20px 0 20px 20px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .vacances h1 {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .vacances {
+    width:100%;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  .vacances p {
+    font-size:1.2rem;
+    font-weight: 500;
+  }
+
+  .filtre {
+    font-size: 1rem;
+    margin: 30px 0 10px 20px;
+    width: 750px;
+    flex-direction: row;
+    height: 50px;
+  }
+  .flexrow .bloc-fas {
+    margin: 0;
+  }
+
+  .filtre h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  .icons-text {
+    width: 72px;
+    font-size: 0.9em;
+    margin:0;
+  }
+
+  .animal {
+    width: auto;
+  }
+
+  .iconSize {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px 0 0 20px;
+    background: var(--clrGris);
+    cursor: pointer;
+  }
+
+  
+
+  .bloc_research {
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  #search {
+    font-size: 1.1rem;
+    height: 60px;
+    width: 300px;
+    border: 3px solid var(--clrGris);
+    border-right: none;
+  }
+  #search .search {
+    padding-left: 15px;
+  }
+
+  .researche {
+    font-size: 1.2em;
+    margin-left: -40px;
+    height: 60px;
+    width: 60px;
+    background: var(--clrBleu);
+    color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    background-image: url(images/outline_search_white_24dp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #search{
+    padding:20px;
+  }
+
+  .iconSizemap{
+    font-size:20px
+  }
+
+
+
+  .iconSize{
+    width: 60px;
+    height: 60px;
+  }
+  .researche span {
+    display: none;
+  }
+
+  .info {
+    width: auto;
+    margin-top: 10px;
+    padding-top: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoicon {
+    width: 30px;
+    height: 28px;
+    font-size:1.2rem
+  }
+  .info p {
+    margin: 10px 0 20px 0;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+  }
+
+  #section {
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    width: 100%;
+    height: auto;
+  }
+
+  .plusPopulaires {
+    font-size: 1.2em;
+    align-items: center;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plusPopulaireslesoleil {
+    background-color: white;
+    width: auto;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 15px 20px;
+    cursor: pointer;
+  }
+
+  .plusPopulaires-Aucoeur {
+    background-color: white;
+    width: auto;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 20px 20px;
+    cursor: pointer;
+  }
+
+  .img2 {
+    padding: 0;
+    margin: 0;
+    width: 250px;
+    height: 150px;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .article-fas {
+    padding-top: 10px;
+  }
+
+  .aside-fas {
+    padding-top: 50px;
+  }
+
+  .aside-fas--a {
+    padding-top: 50px;
+  }
+
+  .aside {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: var(--clrGris);
+  }
+
+  .elements {
+    padding-left: 20px;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+  }
+  .elements-article {
+    padding-left: 15px;
+    flex-wrap: wrap;
+    font-size: 1.1em;
+  }
+
+  h3
+   {
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 600;
+    font-size:1.5em;
+  }
+
+  .article-fas {
+    padding-top: 10px;
+  }
+
+  .article {
+    padding: 0;
+    justify-content: center;
+    justify-content: center;
+    flex-flow: column;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin-top: 15px;
+    background-color: white;
+    
+  }
+
+  .img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .hebergements {
+    margin: 0 0 0 10px ;
+    background-color: white;
+    justify-content: center;
+    width: 768px;;
+    height: auto;
+    flex-flow: row;
+  }
+
+  .hebergements h3{
+    font-size: 0.9em;
+    padding-left: 0;
+    margin: 0;
+    font-weight:600;
+  }
+
+  .hebergements p{
+    font-size: 0.8em;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .hebergements .fas{
+    margin-bottom:5px
+
+  }
+
+
+
+  .auberge {
+  
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+    border: 5px solid white;
+    border-radius: 20px ;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+ 
+    
+  }
+
+  .hotel-port {
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+   
+    border: 5px solid white;
+    border-radius: 20px ;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+  }
+
+  .les-mouette {
+    background-color: white;
+    width: auto;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+
+    border: 5px solid white;
+    border-radius: 20px ;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);}
+
+  .hotel-de-mer {
+    background-color: white;
+    width: 256px;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+  
+  }
+
+  .le-panier {
+    background-color: white;
+    width: 256px;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 7px 3px var(--clrGris);}
+   
+
+  .chez-amina {
+    background-color: white;
+    width: 256px;
+    height: auto;
+    margin: 10px 10px 10px 20px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+   
+  }
+
+  .Afficher-plus {
+    margin: 10px 0 20px 50px;
+    font-size: 1.2em;
+    color: #000;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  .article h2 {
+    margin:5px 0 0 50px;
+    font-size: 1.9em;
+    color: #000;
+    font-weight:700;
+    background-color: white;
+  }
+
+  .activité {
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .Activites h2 {
+    margin: 30px 0 20px 20px;
+    padding: auto;
+    width: auto;
+    font-size: 2em;
+    font-weight: 700;
+  }
+
+  .activites-h3{
+    margin-left: 20px;
+    font-size:0.8rem;
+    
+  }
+
+  .-blocFort-Pomégues {
+    width: auto;
+    margin: auto;
+  }
+
+  .Vieux-Port {
+    width: 350px;
+    height: 210px;
+    margin: auto;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+  }
+
+  .Îles-Frioules {
+    height: 210px;
+    width: 350px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .bloc-NotreDame-Longchamp {
+    width: auto;
+    margin: auto;
+  }
+  .Notre-Dame {
+    margin: auto;
+    height: 210px;
+    width: 350px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Fort-Pomégues {
+    margin: auto;
+    width: 350px;
+    height: 210px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+  .Parc-Longchamp {
+    border-radius: 20px;
+    width: 350px;
+    height: 210px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    cursor: pointer;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Parc-Calanques {
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    cursor: pointer;
+  }
+
+  .Vieux-Port img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Fort-Pomégues img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Îles-Frioules img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+  .Parc-Calanques img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+  }
+
+  .Notre-Dame img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .bloc-activites {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer {
+    bottom: 0;
+    flex-direction: row;
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: var(--clrGris);
+  }
+
+  .footer {
+    height:auto;
+    bottom: 0;
+    flex-flow: row;
+    justify-content: space-between;
   }
 
   .Apropos {
