@@ -932,7 +932,6 @@ footer {
     overflow: hidden;
     margin-top: 15px;
     background-color: white;
-    
   }
 
   .img {
@@ -942,7 +941,7 @@ footer {
   }
 
   .hebergements {
-    margin: 0 ;
+    margin: 0;
 
     background-color: white;
     justify-content: center;
@@ -952,14 +951,13 @@ footer {
   }
 
   .auberge {
-  
     background-color: white;
     width: 350px;
     height: 250px;
     margin: auto;
     margin-top: 20px;
     border: 5px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
     margin-right: 30px;
@@ -1301,12 +1299,12 @@ footer {
   }
 
   .vacances {
-    width:100%;
+    width: 100%;
     margin-top: 10px;
     font-weight: 600;
   }
   .vacances p {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     font-weight: 500;
   }
 
@@ -1381,17 +1379,15 @@ footer {
     background-position: center;
   }
 
-  #search{
-    padding:20px;
+  #search {
+    padding: 20px;
   }
 
-  .iconSizemap{
-    font-size:20px
+  .iconSizemap {
+    font-size: 20px;
   }
 
-
-
-  .iconSize{
+  .iconSize {
     width: 50px;
     height: 50px;
   }
@@ -1411,7 +1407,7 @@ footer {
   .infoicon {
     width: 30px;
     height: 23px;
-    font-size:1.1rem
+    font-size: 1.1rem;
   }
   .info p {
     margin: 10px 0 20px 0;
@@ -1496,12 +1492,11 @@ footer {
     font-size: 1.1em;
   }
 
-  h3
-   {
+  h3 {
     padding-top: 5px;
     margin: 0;
     font-weight: 600;
-    font-size:1.5em;
+    font-size: 1.5em;
   }
 
   .article-fas {
@@ -1518,7 +1513,6 @@ footer {
     overflow: hidden;
     margin-top: 15px;
     background-color: white;
-    
   }
 
   .img {
@@ -1528,7 +1522,7 @@ footer {
   }
 
   .hebergements {
-    margin: 0 ;
+    margin: 0;
 
     background-color: white;
     justify-content: center;
@@ -1538,18 +1532,15 @@ footer {
   }
 
   .auberge {
-  
     background-color: white;
     width: auto;
     height: 200px;
     margin: 20px;
     margin-top: 20px;
     border: 5px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
- 
-    
   }
 
   .hotel-port {
@@ -1622,10 +1613,10 @@ footer {
   }
 
   .article h2 {
-    margin:5px 0 0 30px;
+    margin: 5px 0 0 30px;
     font-size: 1.9em;
     color: #000;
-    font-weight:700;
+    font-weight: 700;
     background-color: white;
   }
 
@@ -1644,10 +1635,9 @@ footer {
     font-weight: 700;
   }
 
-  .activites-h3{
+  .activites-h3 {
     margin-left: 20px;
-    font-size:0.8rem;
-    
+    font-size: 0.8rem;
   }
 
   .-blocFort-Pomégues {
@@ -1775,7 +1765,7 @@ footer {
   }
 
   .footer {
-    height:auto;
+    height: auto;
     bottom: 0;
     align-content: flex-start;
     flex-flow: column;
@@ -1795,7 +1785,6 @@ footer {
   }
 }
 
-
 /*********vVersion iPad**********/
 @media screen and (min-width: 501px) and (max-width: 768px) {
   body {
@@ -1812,16 +1801,16 @@ footer {
   }
 
   .nav {
-    margin:0;
+    margin: 0;
     width: 100%;
     height: 90px;
-    
+
     flex-flow: row;
     display: flex;
 
     border-bottom: 4px solid #f2f2f2;
   }
-  .logo{
+  .logo {
     margin: 30px;
   }
 
@@ -1840,7 +1829,6 @@ footer {
     border-bottom: 4px solid var(--clrBleu);
     width: 160px;
   }
-
 
   .bloc_headerel {
     position: relative;
@@ -1865,12 +1853,12 @@ footer {
   }
 
   .vacances {
-    width:100%;
+    width: 100%;
     margin-top: 10px;
     font-weight: 600;
   }
   .vacances p {
-    font-size:1.2rem;
+    font-size: 1.2rem;
     font-weight: 500;
   }
 
@@ -1894,7 +1882,7 @@ footer {
   .icons-text {
     width: 72px;
     font-size: 0.9em;
-    margin:0;
+    margin: 0;
   }
 
   .animal {
@@ -1908,8 +1896,6 @@ footer {
     background: var(--clrGris);
     cursor: pointer;
   }
-
-  
 
   .bloc_research {
     justify-content: center;
@@ -1943,17 +1929,15 @@ footer {
     background-position: center;
   }
 
-  #search{
-    padding:20px;
+  #search {
+    padding: 20px;
   }
 
-  .iconSizemap{
-    font-size:20px
+  .iconSizemap {
+    font-size: 20px;
   }
 
-
-
-  .iconSize{
+  .iconSize {
     width: 60px;
     height: 60px;
   }
@@ -1973,7 +1957,7 @@ footer {
   .infoicon {
     width: 30px;
     height: 28px;
-    font-size:1.2rem
+    font-size: 1.2rem;
   }
   .info p {
     margin: 10px 0 20px 0;
@@ -2058,12 +2042,11 @@ footer {
     font-size: 1.1em;
   }
 
-  h3
-   {
+  h3 {
     padding-top: 5px;
     margin: 0;
     font-weight: 600;
-    font-size:1.5em;
+    font-size: 1.5em;
   }
 
   .article-fas {
@@ -2080,7 +2063,6 @@ footer {
     overflow: hidden;
     margin-top: 15px;
     background-color: white;
-    
   }
 
   .img {
@@ -2090,46 +2072,40 @@ footer {
   }
 
   .hebergements {
-    margin: 0 0 0 10px ;
+    margin: 0 0 0 10px;
     background-color: white;
     justify-content: center;
-    width: 768px;;
+    width: 768px;
     height: auto;
     flex-flow: row;
   }
 
-  .hebergements h3{
+  .hebergements h3 {
     font-size: 0.9em;
     padding-left: 0;
     margin: 0;
-    font-weight:600;
+    font-weight: 600;
   }
 
-  .hebergements p{
+  .hebergements p {
     font-size: 0.8em;
     padding-left: 0;
     margin: 0;
   }
 
-  .hebergements .fas{
-    margin-bottom:5px
-
+  .hebergements .fas {
+    margin-bottom: 5px;
   }
 
-
-
   .auberge {
-  
     background-color: white;
     width: auto;
     height: auto;
     margin: 10px 10px 10px 20px;
     border: 5px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
- 
-    
   }
 
   .hotel-port {
@@ -2137,9 +2113,9 @@ footer {
     width: auto;
     height: auto;
     margin: 10px 10px 10px 20px;
-   
+
     border: 5px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
@@ -2151,9 +2127,10 @@ footer {
     margin: 10px 10px 10px 20px;
 
     border: 5px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);}
+    box-shadow: 5px 5px 5px 3px var(--clrGris);
+  }
 
   .hotel-de-mer {
     background-color: white;
@@ -2164,7 +2141,6 @@ footer {
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
-  
   }
 
   .le-panier {
@@ -2175,8 +2151,8 @@ footer {
     border: 5px solid white;
     border-radius: 20px;
     cursor: pointer;
-    box-shadow: 5px 5px 7px 3px var(--clrGris);}
-   
+    box-shadow: 5px 5px 7px 3px var(--clrGris);
+  }
 
   .chez-amina {
     background-color: white;
@@ -2187,7 +2163,6 @@ footer {
     border-radius: 20px;
     cursor: pointer;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
-   
   }
 
   .Afficher-plus {
@@ -2199,10 +2174,10 @@ footer {
   }
 
   .article h2 {
-    margin:5px 0 0 50px;
+    margin: 5px 0 0 50px;
     font-size: 1.9em;
     color: #000;
-    font-weight:700;
+    font-weight: 700;
     background-color: white;
   }
 
@@ -2221,10 +2196,9 @@ footer {
     font-weight: 700;
   }
 
-  .activites-h3{
+  .activites-h3 {
     margin-left: 20px;
-    font-size:0.8rem;
-    
+    font-size: 0.8rem;
   }
 
   .-blocFort-Pomégues {
@@ -2352,7 +2326,7 @@ footer {
   }
 
   .footer {
-    height:auto;
+    height: auto;
     bottom: 0;
     flex-flow: row;
     justify-content: space-between;
@@ -2370,5 +2344,3 @@ footer {
     margin: 20px;
   }
 }
-
-
