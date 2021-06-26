@@ -16,6 +16,7 @@ body {
 
 /* NAV */
 nav {
+  height: 70px;
   margin-top: 20px;
 }
 .flexColumnBetween li,
@@ -32,8 +33,8 @@ a {
 }
 
 .flexColumnBetween a:hover {
-  padding-top: 20px;
-  border-top: 2px solid var(--clrBleu);
+  padding-top: 38px;
+  border-top: 4px solid var(--clrBleu);
   width: 160px;
 }
 
@@ -52,8 +53,16 @@ a {
 }
 
 #search {
+  width: 200px;
   height: 50px;
   border: 2px solid var(--clrGris);
+  padding-left: 20px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.iconSizemap {
+  font-size: 1.2em;
 }
 
 .vacances h1 {
@@ -76,7 +85,7 @@ a {
 
 .researche {
   height: 50px;
-  width: 100px;
+  width: 130px;
   background: var(--clrBleu);
   color: white;
   border-radius: 0 10px 10px 0;
@@ -110,12 +119,16 @@ a {
 
 .icons-text {
   height: 45px;
-  width: 90px;
+  width: 100px;
   padding-right: 10px;
   padding-left: 30px;
   border: 3px solid var(--clrGris);
   border-radius: 0 25px 25px 0;
   border-left: transparent;
+}
+
+.animal {
+  width: 150px;
 }
 
 .info {
@@ -135,7 +148,7 @@ a {
 }
 
 .page {
-  margin: 0 40px 40px 40px;
+  margin: 0 20px 20px 20px;
 }
 
 .filtreTexteIcons {
@@ -209,8 +222,12 @@ a {
 }
 
 /**/
+#article {
+  width: 100%;
+}
 
 .article {
+  width: 100%;
   justify-content: flex-start;
   align-items: flex-start;
   flex: 2;
@@ -228,6 +245,7 @@ a {
   margin: 0 0 0 30px;
 }
 .aside {
+  width: 100%;
   flex: 1;
   height: 700px;
   padding: 20px;
@@ -590,7 +608,7 @@ p {
 .activité {
   margin-left: 0;
   padding-left: 0;
-  width: 1850px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -1624,7 +1642,7 @@ footer {
     padding: 0;
     margin: 0;
     flex-flow: column;
-    width: 100%;
+    width: auto;
   }
 
   .Activites h2 {
@@ -1796,7 +1814,7 @@ footer {
   .page {
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: auto;
     height: auto;
   }
 
@@ -1820,12 +1838,12 @@ footer {
   }
   a.nav_a {
     margin: 0;
-    padding: 13px 20px;
+    padding: 13px 25px;
   }
 
   .flexColumnBetween a:hover {
     border-top: 0;
-    padding-bottom: 10px;
+    padding-bottom: 33px;
     border-bottom: 4px solid var(--clrBleu);
     width: 160px;
   }
@@ -1853,8 +1871,8 @@ footer {
   }
 
   .vacances {
-    width: 100%;
-    margin-top: 10px;
+    width: 90%;
+    margin: 20px;
     font-weight: 600;
   }
   .vacances p {
@@ -1863,11 +1881,12 @@ footer {
   }
 
   .filtre {
+    flex-wrap: wrap;
     font-size: 1rem;
     margin: 30px 0 10px 20px;
-    width: 750px;
+    width: 600px;
     flex-direction: row;
-    height: 50px;
+    height: 100px;
   }
   .flexrow .bloc-fas {
     margin: 0;
@@ -1976,9 +1995,9 @@ footer {
   }
 
   .plusPopulaires {
-    font-size: 1.2em;
+    font-size: 1.3em;
     align-items: center;
-    padding: 0px 20px 5px 20px;
+    padding: 0px 30px 5px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -2053,6 +2072,10 @@ footer {
     padding-top: 10px;
   }
 
+  #activites {
+    width: 768px;
+  }
+
   .article {
     padding: 0;
     justify-content: center;
@@ -2075,7 +2098,7 @@ footer {
     margin: 0 0 0 10px;
     background-color: white;
     justify-content: center;
-    width: 768px;
+    width: auto;
     height: auto;
     flex-flow: row;
   }
@@ -2099,7 +2122,7 @@ footer {
 
   .auberge {
     background-color: white;
-    width: auto;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
     border: 5px solid white;
@@ -2110,7 +2133,7 @@ footer {
 
   .hotel-port {
     background-color: white;
-    width: auto;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
 
@@ -2122,7 +2145,7 @@ footer {
 
   .les-mouette {
     background-color: white;
-    width: auto;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
 
@@ -2134,7 +2157,7 @@ footer {
 
   .hotel-de-mer {
     background-color: white;
-    width: 256px;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
     border: 5px solid white;
@@ -2145,7 +2168,7 @@ footer {
 
   .le-panier {
     background-color: white;
-    width: 256px;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
     border: 5px solid white;
@@ -2156,7 +2179,7 @@ footer {
 
   .chez-amina {
     background-color: white;
-    width: 256px;
+    width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
     border: 5px solid white;
@@ -2181,7 +2204,13 @@ footer {
     background-color: white;
   }
 
+  .bloc-activites {
+    position: relative;
+  }
+
   .activité {
+    height: 1000px;
+    position: relative;
     padding: 0;
     margin: 0;
     flex-flow: column;
@@ -2202,22 +2231,29 @@ footer {
   }
 
   .-blocFort-Pomégues {
+    position: absolute;
+    top: 0;
+    right: 30px;
     width: auto;
     margin: auto;
+    height: 470px;
   }
 
   .Vieux-Port {
+    position: absolute;
     width: 350px;
-    height: 210px;
+    height: 470px;
     margin: auto;
     border-radius: 20px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
+    top: 30px;
+    left: 40px;
   }
 
   .Îles-Frioules {
-    height: 210px;
-    width: 350px;
+    height: 220px;
+    width: 310px;
     border-radius: 20px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -2226,13 +2262,17 @@ footer {
   }
 
   .bloc-NotreDame-Longchamp {
-    width: auto;
-    margin: auto;
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    width: 350px;
+    height: 470px;
+    margin: 20px;
   }
   .Notre-Dame {
     margin: auto;
     height: 210px;
-    width: 350px;
+    width: auto;
     border-radius: 20px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -2243,8 +2283,8 @@ footer {
 
   .Fort-Pomégues {
     margin: auto;
-    width: 350px;
-    height: 210px;
+    width: 310px;
+    height: 220px;
     border-radius: 20px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -2254,7 +2294,7 @@ footer {
 
   .Parc-Longchamp {
     border-radius: 20px;
-    width: 350px;
+    width: auto;
     height: 210px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -2264,10 +2304,13 @@ footer {
   }
 
   .Parc-Calanques {
-    width: 350px;
-    height: 250px;
-    margin: auto;
-    margin-top: 30px;
+    position: absolute;
+    top: 530px;
+    right: 0px;
+    width: 310px;
+    height: 450px;
+    margin: 20px 30px;
+
     border-radius: 20px;
     background: white;
     box-shadow: 5px 5px 5px 3px var(--clrGris);
@@ -2276,7 +2319,7 @@ footer {
 
   .Vieux-Port img {
     width: 100%;
-    height: 150px;
+    height: 410px;
     border-radius: 20px 20px 0 0;
   }
 
@@ -2293,7 +2336,7 @@ footer {
   }
   .Parc-Calanques img {
     width: 100%;
-    height: 150px;
+    height: 390px;
     border-radius: 20px 20px 0 0;
     cursor: pointer;
   }
@@ -2327,7 +2370,6 @@ footer {
 
   .footer {
     height: auto;
-    bottom: 0;
     flex-flow: row;
     justify-content: space-between;
   }
@@ -2340,7 +2382,214 @@ footer {
   }
 
   .tailleBlocFoot {
+    justify-content: space-between;
+  }
+  .tailleBlocFoot {
     padding: 0;
     margin: 20px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1450px) {
+  .article {
+    font-size: 0.7em;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 600px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--clrGris);
+  }
+
+  .article h2 {
+    padding: 0;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0 0 0 30px;
+  }
+  .aside {
+    width: 100%;
+    height: 600px;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background: var(--clrGris);
+  }
+
+  .img {
+    width: 100%;
+    height: 120px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img2 {
+    padding: 0;
+    margin: 0;
+    width: 120px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  h4 {
+    background-color: #bebbbb;
+  }
+
+  .auberge {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .hotel-port {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .les-mouette {
+    background-color: white;
+    width: 190px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .hotel-de-mer {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .le-panier {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .chez-amina {
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .hebergements {
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .auberge-elements h3,
+  p {
+    padding: 0;
+    margin: 3px 0 3px 0;
+  }
+
+  .Afficher-plus {
+    margin: 20px 0 0 30px;
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+  }
+
+  /********Aside*********/
+  .plusPopulaires {
+    align-items: center;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plusPopulaires h2 {
+    padding-left: 5px;
+  }
+
+  .plusPopulaireslesoleil {
+    padding: 0;
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 20px 20px;
+    cursor: pointer;
+  }
+
+  .plusPopulaires-Aucoeur {
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    margin: 20px 20px;
+
+    cursor: pointer;
+  }
+
+  .plusPopulaires-blanc {
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    border: 5px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px 20px;
+  }
+
+  aside {
+    font-size: 0.8em;
+  }
+
+  .activites-h3 {
+    font-size: 0.9rem;
+    font-weight: 600px;
+    padding: 0;
+    margin: 0 0 0 15px;
+  }
+
+  .Activites {
+    width: 100%;
+    height: auto;
+  }
+
+  #section {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  .tailleBlocFoot {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 100px;
+  }
+
+  .Apropos {
+    padding: 0 50px 0 0;
+    font-size: 0.9rem;
+    font-weight: 700;
   }
 }
