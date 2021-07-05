@@ -19,6 +19,11 @@ nav {
   height: 70px;
   margin-top: 20px;
 }
+
+#activit.nav_a:hover {
+  color: var(--clrBleu);
+}
+
 .flexColumnBetween li,
 a {
   text-decoration: none;
@@ -36,14 +41,25 @@ a {
   padding-top: 38px;
   border-top: 4px solid var(--clrBleu);
   width: 160px;
+  color: var(--clrBleu);
 }
 
-#activity {
+#activit,
+#activitt {
   color: rgb(34, 34, 34);
 }
+
 /*fin de Nav*/
 
 /*Header*/
+
+.flexColumn .bloc_header {
+  width: 70%;
+}
+
+.flexColumn .bloc_headerel {
+  width: 100%;
+}
 .iconSize {
   height: 50px;
   width: 50px;
@@ -61,6 +77,9 @@ a {
   font-weight: 600;
 }
 
+.researche .fas {
+  display: none;
+}
 .iconSizemap {
   font-size: 1.2em;
 }
@@ -73,16 +92,36 @@ a {
   padding-top: 0;
 }
 
+/*
 .bloc-fas {
-  border-radius: 25px;
+  border-radius: 100px;
   cursor: pointer;
-}
-.bloc-fas:hover {
-  transform: scale(1.1);
-  color: var(--clrBleu);
-  background-color: #f2f2f2;
+}*/
+
+
+.filtres .bloc-fas {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 200px;
+  border: 2px #F2F2F2 solid;
+  height: 50px;
+  position: relative;
+  padding-left: 55px;
+  padding-right: 14px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  transition: transform .2s;
+  cursor: pointer;
+}*/
+
+.bloc-fas:hover > .filtreIcons {
+  color: white;
+  background-color: var(--clrBleu);
 }
 
+.icons-text:hover {
+  color: #0065fc;
+}
 .researche {
   height: 50px;
   width: 130px;
@@ -99,8 +138,8 @@ a {
 }
 
 .filtre {
-  height: 50px;
-  width: 850px;
+  height: 60px;
+  width: 900px;
   margin-top: 20px;
 }
 
@@ -109,26 +148,36 @@ a {
 }
 
 .filtreIcons {
+  z-index: 9999;
   margin-right: -30px;
   border-radius: 25px;
   width: 50px;
   height: 50px;
   color: var(--clrBleu);
   background-color: var(--clrBleuCl);
+  font-size: 1.4em;
+}
+
+.flexrow .bloc-fas {
+  height: 50px;
+}
+.iconeAside .filtreIcons {
+  width: 60px;
 }
 
 .icons-text {
+  margin: unset;
   height: 45px;
-  width: 100px;
+  width: 60%;
   padding-right: 10px;
   padding-left: 30px;
-  border: 3px solid var(--clrGris);
+  border: 2px solid var(--clrGrisfonce);
   border-radius: 0 25px 25px 0;
   border-left: transparent;
 }
 
 .animal {
-  width: 150px;
+  width: 140px;
 }
 
 .info {
@@ -142,9 +191,10 @@ a {
 .infoicon {
   width: 20px;
   height: 20px;
-  border: 2px solid var(--clrGris);
+  border: 2px solid var(--clrGrisfonce);
   border-radius: 25px;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .page {
@@ -223,7 +273,8 @@ a {
 
 /**/
 #article {
-  width: 100%;
+  width: 100vw;
+  height: auto;
 }
 
 .article {
@@ -287,6 +338,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .auberge:hover {
@@ -300,6 +352,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .hotel-port:hover {
@@ -313,6 +366,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .les-mouette:hover {
@@ -325,6 +379,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .hotel-de-mer:hover {
@@ -337,6 +392,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .le-panier:hover {
@@ -349,6 +405,7 @@ h4 {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 .chez-amina:hover {
   transform: scale(1.1);
@@ -396,6 +453,7 @@ p {
   border-radius: 20px;
   margin: 0 0 40px 30px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .plusPopulaireslesoleil:hover {
@@ -409,6 +467,7 @@ p {
   border-radius: 20px;
   margin: 0 0 40px 30px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .plusPopulaires-Aucoeur:hover {
@@ -421,6 +480,7 @@ p {
   border: 5px solid white;
   border-radius: 20px;
   cursor: pointer;
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .plusPopulaires-blanc:hover {
@@ -476,7 +536,7 @@ p {
   margin: 20px 40px 40px 0px;
   border-radius: 20px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
 }
 
 .Vieux-Port:hover {
@@ -494,8 +554,9 @@ p {
   height: 220px;
   border-radius: 20px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   margin-top: 40px;
+  cursor: pointer;
 }
 .Îles-Frioules:hover {
   transform: scale(1.1);
@@ -504,7 +565,7 @@ p {
   height: 220px;
   border-radius: 20px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   cursor: pointer;
 }
 .Notre-Dame:hover {
@@ -514,7 +575,7 @@ p {
   height: 340px;
   border-radius: 20px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   cursor: pointer;
   margin-bottom: 20px;
 }
@@ -527,7 +588,7 @@ p {
   border-radius: 20px;
   height: 340px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   cursor: pointer;
   margin-top: 40px;
 }
@@ -552,7 +613,7 @@ p {
   margin: 20px 40px 40px 40px;
   border-radius: 20px;
   background: white;
-  box-shadow: 5px 5px 5px 3px var(--clrGris);
+  box-shadow: rgb(121 121 121 / 30%) 1px 1px 20px;
   cursor: pointer;
 }
 .Parc-Calanques:hover {
@@ -656,15 +717,15 @@ footer {
   font-weight: 500;
 }
 
-@media screen and (min-width: 414px) and (max-width: 500px) {
+@media screen and (min-width: 100px) and (max-width: 199px) {
   body {
     width: 100%;
 
-    font-size: 0.9rem;
     font-weight: 600;
   }
 
   .page {
+    font-size: 3vw;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -672,22 +733,42 @@ footer {
   }
 
   .nav {
+    font-size: 3vw;
     width: 100%;
-    height: 110px;
+    height: 80px;
     position: relative;
     flex-flow: row;
     display: flex;
-
     border-bottom: 4px solid #f2f2f2;
   }
 
+  .researche .fas {
+    display: unset;
+    font-size: 1.4em;
+  }
   .nav ul {
     margin: 0;
-    padding: 0;
   }
-  a.nav_a {
+
+  #activit.nav_a {
+    padding: 13px 20px 10px 20px;
     margin: 0;
-    padding: 13px 50px;
+  }
+
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
+  a.nav_a:last-child {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  #activit-top:hover {
+    border-bottom: unset;
+    padding-top: 20px;
+    border-top: 4px solid var(--clrBleu);
+    width: 160px;
   }
 
   .flexColumnBetween a:hover {
@@ -699,13 +780,9 @@ footer {
 
   .nav_linkfirst {
     margin: 0;
-    padding: 0;
     position: absolute;
     left: 0px;
     bottom: 10px;
-  }
-
-  .nav_linkfirst:hover {
   }
 
   .nav_linksecond {
@@ -716,12 +793,573 @@ footer {
     bottom: 10px;
   }
 
-  
   .nav_linkthird {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: -15px;
+    right: 0px;
+    top: 15px;
+  }
+
+  .logo {
+    position: absolute;
+    left: 5px;
+    top: 0;
+  }
+
+  .bloc_headerel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .vacances {
+    width: auto;
+    height: auto;
+    margin: 20px 0 0px 20px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .vacances h1 {
+    width: auto;
+    margin-bottom: 10px;
+  }
+
+  .vacances {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .filtre {
+    position: relative;
+    font-size: 3.5vw;
+    margin: 5px 0 5px 20px;
+    width: 90%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .iconeAside .filtreIcons {
+    width: 30px;
+  }
+
+  .filtreIcons {
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    width: 30px;
+  }
+
+  .flexrow .bloc-fas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    border: 2px solid var(--clrGrisfonce);
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .filtre h3 {
+    font-size: 5vw;
+    margin: 10px 0;
+    font-weight: 600;
+  }
+
+  .flexCentre.icons-text {
+    text-align: center;
+    width: 70%;
+    padding-left: 10px;
+    margin: 0;
+    border: none;
+    height: 100%;
+    width: auto;
+  }
+
+  .flexrow .bloc-fas.animala {
+    width: 60%;
+  }
+  .flexrow .bloc-fas.iconeAside {
+    width: 50%;
+  }
+
+  .iconSize {
+    font-size: 5vw;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px 0 0 20px;
+    background: var(--clrGris);
+    cursor: pointer;
+  }
+
+  .bloc_research {
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+  }
+
+  #search {
+    font-size: 3.5vw;
+    height: 30px;
+    width: 90%;
+    border: 3px solid var(--clrGris);
+    border-right: none;
+  }
+  #search .search {
+    padding-left: 7px;
+  }
+
+  span {
+    display: none;
+  }
+  div.researche {
+    margin-left: -25px;
+    height: 30px;
+    width: 30px;
+    background: var(--clrBleu);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .info {
+    width: auto;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .infoicon {
+    font-size: 5vw;
+    width: 20px;
+    height: 15px;
+  }
+  .info p {
+    margin: 10px 0 10px 0;
+    flex-wrap: wrap;
+    font-size: 3.5vw;
+  }
+
+  #section {
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-flow: column-reverse;
+    width: 95%;
+    height: auto;
+    margin: auto;
+  }
+
+  .aside {
+    margin: auto;
+    font-size: 3.5vw;
+    max-width: 100vw;
+  }
+  .plusPopulaires {
+    align-items: center;
+    padding: 0px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plusPopulaireslesoleil {
+    width: 82%;
+    height: 100px;
+
+    margin: 15px 10px;
+  }
+
+  .plusPopulaires-Aucoeur {
+    width: 82%;
+    height: 100px;
+
+    margin: 10px 10px;
+  }
+
+  .plusimg {
+    width: 50%;
+  }
+  .imgmd {
+    width: 70%;
+  }
+
+  .img2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .article-fas {
+    padding-top: 10px;
+  }
+
+  .aside-fas {
+    padding-top: 4vh;
+    font-size: 3vw;
+  }
+
+  .aside-fas--a {
+    padding-top: 4vh;
+    font-size: 3vw;
+  }
+
+  .aside {
+    margin: auto;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background: var(--clrGris);
+  }
+
+  .elements {
+    padding-left: 7px;
+    flex-wrap: wrap;
+    font-size: 3vw;
+  }
+  .elements-article {
+    padding-left: 15px;
+    flex-wrap: wrap;
+  }
+
+  .elements h3,
+  p {
+    width: auto;
+    padding-top: 5px;
+    margin: 0;
+    font-size: 4vw;
+  }
+
+  .article-fas {
+    padding-top: 10px;
+  }
+
+  .article {
+    margin: 0;
+    max-width: 98%;
+    padding: 0;
+    justify-content: center;
+    justify-content: center;
+    flex-flow: column;
+    width: auto;
+
+    margin-top: 15px;
+    background-color: white;
+  }
+
+  .img {
+    width: 100%;
+    height: 80px;
+  }
+
+  .hebergements {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-flow: column;
+  }
+
+  .auberge {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .hotel-port {
+    padding: 0;
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .les-mouette {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+
+    margin-top: 20px;
+  }
+
+  .hotel-de-mer {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+
+    margin-top: 20px;
+  }
+
+  .le-panier {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .chez-amina {
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .Afficher-plus {
+    margin: 20px 0 0 30px;
+    font-size: 1.2em;
+    color: #000;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  .article h2 {
+    font-size: 1.5em;
+    color: #000;
+    font-weight: 600;
+    background-color: white;
+  }
+
+  .activité {
+    padding: 0;
+    margin: 0;
+    flex-flow: column;
+    width: 100%;
+  }
+
+  .activité h3 {
+    font-size: 1.5em;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .Activites h2 {
+    margin: 40px 0 20px 45px;
+    width: auto;
+    font-size: 1.7em;
+  }
+
+  .-blocFort-Pomégues {
+    width: auto;
+    margin: auto;
+  }
+
+  .Vieux-Port {
+    width: 90%;
+    height: 210px;
+    margin: auto;
+  }
+
+  .Îles-Frioules {
+    height: 210px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .bloc-NotreDame-Longchamp {
+    width: auto;
+    margin: auto;
+  }
+  .Notre-Dame {
+    margin: auto;
+    height: 210px;
+    width: 90%;
+
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Fort-Pomégues {
+    margin: auto;
+    width: 90%;
+    height: 210px;
+
+    margin-top: 30px;
+  }
+
+  .Parc-Longchamp {
+    width: 90%;
+    height: 210px;
+
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Parc-Calanques {
+    width: 90%;
+    height: 250px;
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .Vieux-Port img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Fort-Pomégues img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Îles-Frioules img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+  .Parc-Calanques img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+  }
+
+  .Notre-Dame img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .Parc-Longchamp img {
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .bloc-activites {
+    height: 100%;
+    width: 100%;
+  }
+
+  footer {
+    font-size: 3vw;
+    bottom: 0;
+    flex-direction: column;
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    padding: 0;
+    background: var(--clrGris);
+  }
+
+  .footer {
+    bottom: 0;
+    align-content: flex-start;
+    flex-flow: column;
+    justify-content: flex-start;
+  }
+
+  .Apropos {
+    padding: 0;
+    margin: 10px;
+    justify-content: flex-start;
+    align-content: flex-start;
+  }
+
+  .tailleBlocFoot {
+    padding: 0;
+    margin: 10px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 330px) {
+  body {
+    width: 100%;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .page {
+    font-size: 3vw;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .nav {
+    width: 100%;
+    height: 90px;
+    position: relative;
+    flex-flow: row;
+    display: flex;
+    border-bottom: 4px solid #f2f2f2;
+  }
+
+  .researche .fas {
+    display: unset;
+    font-size: 1.4em;
+  }
+  .nav ul {
+    margin: 0;
+  }
+
+  #activit.nav_a {
+    padding: 13px 50px 10px 50px;
+    margin: 0;
+  }
+
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
+  a.nav_a:last-child {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  #activit-top:hover {
+    border-bottom: unset;
+    padding-top: 20px;
+    border-top: 4px solid var(--clrBleu);
+    width: 160px;
+  }
+
+  .flexColumnBetween a:hover {
+    border-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 4px solid var(--clrBleu);
+    width: 160px;
+  }
+
+  .nav_linkfirst {
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+  }
+
+  .nav_linksecond {
+    margin: 0;
+    padding-left: 20px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+  }
+
+  .nav_linkthird {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0px;
     top: 15px;
   }
 
@@ -742,14 +1380,14 @@ footer {
   .vacances {
     width: auto;
     height: auto;
-    margin: 20px 0 20px 20px;
+    margin: 10px 0 10px 20px;
     justify-content: center;
     padding: 0;
   }
 
   .vacances h1 {
     width: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .vacances {
@@ -759,33 +1397,67 @@ footer {
 
   .filtre {
     position: relative;
-    font-size: 1rem;
-    margin: 20px;
-    width: 100%;
+    font-size: 3.5vw;
+    margin: 5px 0 5px 20px;
+    width: 90%;
     flex-direction: column;
-    height: 250px;
+    height: 180px;
   }
-  .flexrow .bloc-fas {
+
+  .filtreIcons .flexCentre {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .filtreIcons {
+    margin-right: -20px;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    color: var(--clrBleu);
+    background-color: var(--clrBleuCl);
+  }
+
+  .iconeAside .filtreIcons {
+    width: 40px;
+  }
+
+  .flexrow .bloc-fas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+    border: 2px solid var(--clrGrisfonce);
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;
   }
 
   .filtre h3 {
-    font-size: 1.5rem;
+    font-size: 5vw;
     margin: 10px 0;
     font-weight: 600;
   }
-
-  .icons-text {
-    width: 100px;
+  .flexCentre.icons-text {
+    height: 35px;
+    padding-left: 20px;
+    margin-left: 0;
   }
 
-  .animal {
-    width: 150px;
+  .flexrow .bloc-fas.animala {
+    width: 70%;
+  }
+  .flexrow .bloc-fas.iconeAside {
+    width: 50%;
   }
 
   .iconSize {
-    height: 60px;
-    width: 60px;
+    font-size: 4.5vw;
+    height: 50px;
+    width: 50px;
     border-radius: 20px 0 0 20px;
     background: var(--clrGris);
     cursor: pointer;
@@ -793,8 +1465,8 @@ footer {
 
   .iconeAside {
     position: absolute;
-    top: 65px;
-    right: 40px;
+    top: 33px;
+    right: 0;
   }
 
   .bloc_research {
@@ -804,9 +1476,9 @@ footer {
   }
 
   #search {
-    font-size: 1.4rem;
-    height: 60px;
-    width: 300px;
+    font-size: 3.5vw;
+    height: 50px;
+    width: 90%;
     border: 3px solid var(--clrGris);
     border-right: none;
   }
@@ -814,21 +1486,20 @@ footer {
     padding-left: 15px;
   }
 
-  .researche {
-    margin-left: -40px;
-    height: 60px;
-    width: 60px;
+  span {
+    display: none;
+  }
+  div.researche {
+    margin-left: -45px;
+    height: 50px;
+    width: 50px;
     background: var(--clrBleu);
     color: white;
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    background-image: url(images/outline_search_white_24dp.png);
     background-repeat: no-repeat;
     background-position: center;
-  }
-  .researche span {
-    display: none;
   }
 
   .info {
@@ -841,13 +1512,14 @@ footer {
   }
 
   .infoicon {
-    width: 30px;
-    height: 25px;
+    font-size: 4vw;
+    width: 25px;
+    height: 23px;
   }
   .info p {
-    margin: 20px 0 20px 0;
+    margin: 10px 0 10px 0;
     flex-wrap: wrap;
-    font-size: 1.1rem;
+    font-size: 3.5vw;
   }
 
   #section {
@@ -856,10 +1528,16 @@ footer {
     align-content: center;
     align-items: center;
     flex-flow: column-reverse;
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin: auto;
   }
 
+  .aside {
+    margin: auto;
+    font-size: 2.5vw;
+    max-width: 100vw;
+  }
   .plusPopulaires {
     align-items: center;
     padding: 0px 20px 5px 20px;
@@ -868,29 +1546,30 @@ footer {
   }
 
   .plusPopulaireslesoleil {
-    background-color: white;
-    width: 350px;
+    width: 82%;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
+
     margin: 15px 20px;
-    cursor: pointer;
   }
 
   .plusPopulaires-Aucoeur {
-    background-color: white;
-    width: 350px;
+    width: 82%;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
+
     margin: 10px 20px;
-    cursor: pointer;
+  }
+
+  .plusimg {
+    width: 50%;
+  }
+  .imgmd {
+    width: 70%;
   }
 
   .img2 {
     padding: 0;
     margin: 0;
-    width: 160px;
+    width: 100%;
     height: 150px;
     border-radius: 15px 0 0 15px;
   }
@@ -900,14 +1579,15 @@ footer {
   }
 
   .aside-fas {
-    padding-top: 50px;
+    padding-top: 6.5vh;
   }
 
   .aside-fas--a {
-    padding-top: 50px;
+    padding-top: 6.5vh;
   }
 
   .aside {
+    margin: auto;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -916,18 +1596,19 @@ footer {
   }
 
   .elements {
-    padding-left: 20px;
+    padding-left: 7px;
     flex-wrap: wrap;
-    font-size: 1.1em;
+    font-size: 3vw;
   }
   .elements-article {
     padding-left: 15px;
     flex-wrap: wrap;
-    font-size: 1.1em;
+    font-size: 3.5vw;
   }
 
   .elements h3,
   p {
+    width: auto;
     padding-top: 5px;
     margin: 0;
   }
@@ -937,13 +1618,14 @@ footer {
   }
 
   .article {
+    margin: 0;
+    max-width: 98%;
     padding: 0;
     justify-content: center;
     justify-content: center;
     flex-flow: column;
     width: auto;
-    height: auto;
-    overflow: hidden;
+
     margin-top: 15px;
     background-color: white;
   }
@@ -951,12 +1633,11 @@ footer {
   .img {
     width: 100%;
     height: 150px;
-    border-radius: 15px 15px 0 0;
   }
 
   .hebergements {
     margin: 0;
-
+    padding: 0;
     background-color: white;
     justify-content: center;
     width: 100%;
@@ -965,76 +1646,47 @@ footer {
   }
 
   .auberge {
-    background-color: white;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
     margin-top: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    margin-right: 30px;
   }
 
   .hotel-port {
-    background-color: white;
     padding: 0;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
     margin-top: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .les-mouette {
-    background-color: white;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+
     margin-top: 20px;
   }
 
   .hotel-de-mer {
-    background-color: white;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+
     margin-top: 20px;
   }
 
   .le-panier {
-    background-color: white;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 7px 3px var(--clrGris);
     margin-top: 20px;
   }
 
   .chez-amina {
-    background-color: white;
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
     margin-top: 20px;
   }
 
@@ -1062,8 +1714,6 @@ footer {
 
   .Activites h2 {
     margin: 40px 0 20px 45px;
-
-  
     width: auto;
     font-size: 1.7em;
   }
@@ -1074,20 +1724,15 @@ footer {
   }
 
   .Vieux-Port {
-    width: 350px;
+    width: 90%;
     height: 210px;
     margin: auto;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .Îles-Frioules {
     height: 210px;
-    width: 350px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: 90%;
+
     margin: auto;
     margin-top: 30px;
   }
@@ -1099,46 +1744,33 @@ footer {
   .Notre-Dame {
     margin: auto;
     height: 210px;
-    width: 350px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+    width: 90%;
+
     margin: auto;
     margin-top: 30px;
   }
 
   .Fort-Pomégues {
     margin: auto;
-    width: 350px;
+    width: 90%;
     height: 210px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+
     margin-top: 30px;
   }
 
   .Parc-Longchamp {
-    border-radius: 20px;
-    width: 350px;
+    width: 90%;
     height: 210px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+
     margin: auto;
     margin-top: 30px;
   }
 
   .Parc-Calanques {
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
     margin-top: 30px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
   }
 
   .Vieux-Port img {
@@ -1200,6 +1832,7 @@ footer {
   }
 
   .Apropos {
+    font-size: 4vw;
     padding: 0;
     margin: 20px;
     justify-content: flex-start;
@@ -1207,20 +1840,22 @@ footer {
   }
 
   .tailleBlocFoot {
+    font-size: 4vw;
     padding: 0;
-    margin: 20px;
+    margin: 10px 20px;
   }
 }
 
-/***mobile minwidth375****/
-@media screen and (min-width: 375px) and (max-width: 413px) {
+@media screen and (min-width: 331px) and (max-width: 500px) {
   body {
     width: 100%;
-    font-size: 0.7rem;
+
+    font-size: 0.9rem;
     font-weight: 600;
   }
 
   .page {
+    font-size: 3vw;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -1229,21 +1864,40 @@ footer {
 
   .nav {
     width: 100%;
-    height: 90px;
+    height: 110px;
     position: relative;
     flex-flow: row;
     display: flex;
-
     border-bottom: 4px solid #f2f2f2;
   }
 
+  .researche .fas {
+    display: unset;
+    font-size: 1.4em;
+  }
   .nav ul {
     margin: 0;
-    padding: 0;
   }
-  a.nav_a {
+
+  #activit.nav_a {
+    padding: 13px 50px 10px 50px;
     margin: 0;
-    padding: 13px 50px;
+  }
+
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
+  a.nav_a:last-child {
+    padding-right: 20px;
+    margin-right: 0;
+  }
+
+  #activit-top:hover {
+    border-bottom: unset;
+    padding-top: 20px;
+    border-top: 4px solid var(--clrBleu);
+    width: 160px;
   }
 
   .flexColumnBetween a:hover {
@@ -1255,13 +1909,9 @@ footer {
 
   .nav_linkfirst {
     margin: 0;
-    padding: 0;
     position: absolute;
     left: 0px;
     bottom: 10px;
-  }
-
-  .nav_linkfirst:hover {
   }
 
   .nav_linksecond {
@@ -1272,13 +1922,11 @@ footer {
     bottom: 10px;
   }
 
- 
-
   .nav_linkthird {
     margin: 0;
     padding: 0;
     position: absolute;
-    right: -15px;
+    right: 0px;
     top: 15px;
   }
 
@@ -1292,7 +1940,6 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
-
     flex-direction: column;
     justify-content: center;
   }
@@ -1306,49 +1953,88 @@ footer {
   }
 
   .vacances h1 {
-    width: 90%;
+    width: auto;
     margin-bottom: 20px;
   }
 
   .vacances {
-    width: 100%;
     margin-top: 10px;
     font-weight: 600;
-  }
-  .vacances p {
-    font-size: 1.1rem;
-    font-weight: 500;
   }
 
   .filtre {
     position: relative;
-    font-size: 1rem;
-    margin: 20px 0 10px 20px;
-    width: 100%;
+    font-size: 3vw;
+    margin: 5px 0 5px 20px;
+    width: 90%;
     flex-direction: column;
-    height: 220px;
+    height: auto;
   }
-  .flexrow .bloc-fas {
+
+  .filtreIcons .flexCentre {
     margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .filtreIcons {
+    margin-right: -20px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    color: var(--clrBleu);
+    background-color: var(--clrBleuCl);
+  }
+
+  .iconeAside .filtreIcons {
+    width: 50px;
+  }
+
+  .flexrow .bloc-fas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 2px solid var(--clrGrisfonce);
+    margin: 0;
+    margin-bottom: 10px;
+    border: none;
   }
 
   .filtre h3 {
-    font-size: 1.5rem;
+    font-size: 5vw;
     margin: 10px 0;
     font-weight: 600;
   }
-
-  .icons-text {
-    width: 80px;
+  .flexCentre.icons-text {
+    padding-left: 20px;
+    margin-left: 0;
   }
 
-  .animal {
-    width: 130px;
+  /*.flexCentre.icons-text {
+    border: 2px solid var(--clrGrisfonce);
+    text-align: center;
+    width: 150px;
+    padding-left: 10px;
+    margin: 0;
+    border-left: unset;
+    height: 100%;
+    width: auto;
+  }*/
+
+  .flexrow .bloc-fas.animala {
+    width: 190px;
+  }
+  .flexrow .bloc-fas.iconeAside {
+    width: 150px;
   }
 
   .iconSize {
-    height: 60px;
-    width: 60px;
+    font-size: 4.5vw;
+    height: 50px;
+    width: 50px;
     border-radius: 20px 0 0 20px;
     background: var(--clrGris);
     cursor: pointer;
@@ -1356,8 +2042,8 @@ footer {
 
   .iconeAside {
     position: absolute;
-    top: 55px;
-    right: 40px;
+    top: 42px;
+    right: 10px;
   }
 
   .bloc_research {
@@ -1367,9 +2053,9 @@ footer {
   }
 
   #search {
-    font-size: 1.1rem;
+    font-size: 3.5vw;
     height: 50px;
-    width: 250px;
+    width: 90%;
     border: 3px solid var(--clrGris);
     border-right: none;
   }
@@ -1377,8 +2063,11 @@ footer {
     padding-left: 15px;
   }
 
-  .researche {
-    margin-left: -40px;
+  span {
+    display: none;
+  }
+  div.researche {
+    margin-left: -45px;
     height: 50px;
     width: 50px;
     background: var(--clrBleu);
@@ -1386,25 +2075,8 @@ footer {
     border-radius: 20px;
     cursor: pointer;
     font-weight: bold;
-    background-image: url(images/outline_search_white_24dp.png);
     background-repeat: no-repeat;
     background-position: center;
-  }
-
-  #search {
-    padding: 20px;
-  }
-
-  .iconSizemap {
-    font-size: 20px;
-  }
-
-  .iconSize {
-    width: 50px;
-    height: 50px;
-  }
-  .researche span {
-    display: none;
   }
 
   .info {
@@ -1417,14 +2089,13 @@ footer {
   }
 
   .infoicon {
-    width: 30px;
-    height: 23px;
-    font-size: 1.1rem;
+    width: 25px;
+    height: 25px;
   }
   .info p {
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: 3vw;
   }
 
   #section {
@@ -1433,12 +2104,17 @@ footer {
     align-content: center;
     align-items: center;
     flex-flow: column-reverse;
-    width: 100%;
+    width: 95%;
     height: auto;
+    margin: auto;
   }
 
+  .aside {
+    margin: auto;
+    font-size: 2.5vw;
+    max-width: 100vw;
+  }
   .plusPopulaires {
-    font-size: 1.2em;
     align-items: center;
     padding: 0px 20px 5px 20px;
     display: flex;
@@ -1446,29 +2122,30 @@ footer {
   }
 
   .plusPopulaireslesoleil {
-    background-color: white;
-    width: auto;
+    width: 82%;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
+
     margin: 15px 20px;
-    cursor: pointer;
   }
 
   .plusPopulaires-Aucoeur {
-    background-color: white;
-    width: auto;
+    width: 82%;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
-    margin: 20px 20px;
-    cursor: pointer;
+
+    margin: 10px 20px;
+  }
+
+  .plusimg {
+    width: 50%;
+  }
+  .imgmd {
+    width: 70%;
   }
 
   .img2 {
     padding: 0;
     margin: 0;
-    width: 160px;
+    width: 100%;
     height: 150px;
     border-radius: 15px 0 0 15px;
   }
@@ -1478,14 +2155,15 @@ footer {
   }
 
   .aside-fas {
-    padding-top: 50px;
+    padding-top: 6.5vh;
   }
 
   .aside-fas--a {
-    padding-top: 50px;
+    padding-top: 6.5vh;
   }
 
   .aside {
+    margin: auto;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -1494,21 +2172,21 @@ footer {
   }
 
   .elements {
-    padding-left: 20px;
+    padding-left: 7px;
     flex-wrap: wrap;
-    font-size: 1.1em;
+    font-size: 3vw;
   }
   .elements-article {
     padding-left: 15px;
     flex-wrap: wrap;
-    font-size: 1.1em;
+    font-size: 3vw;
   }
 
-  h3 {
+  .elements h3,
+  p {
+    width: auto;
     padding-top: 5px;
     margin: 0;
-    font-weight: 600;
-    font-size: 1.5em;
   }
 
   .article-fas {
@@ -1516,26 +2194,27 @@ footer {
   }
 
   .article {
+    margin: 0;
+    max-width: 98%;
     padding: 0;
     justify-content: center;
     justify-content: center;
     flex-flow: column;
     width: auto;
-    height: auto;
-    overflow: hidden;
+
     margin-top: 15px;
     background-color: white;
   }
 
   .img {
     width: 100%;
-    height: 120px;
-    border-radius: 15px 15px 0 0;
+    height: 150px;
   }
 
   .hebergements {
+    font-size: 3vw;
     margin: 0;
-
+    padding: 0;
     background-color: white;
     justify-content: center;
     width: 100%;
@@ -1544,80 +2223,52 @@ footer {
   }
 
   .auberge {
-    background-color: white;
-    width: auto;
-    height: 200px;
-    margin: 20px;
+    width: 90%;
+    height: 250px;
+    margin: auto;
     margin-top: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .hotel-port {
-    background-color: white;
     padding: 0;
-    width: auto;
-    height: 200px;
-    margin: 20px;
+    width: 90%;
+    height: 250px;
+    margin: auto;
     margin-top: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .les-mouette {
-    background-color: white;
-    width: auto;
-    height: 200px;
-    margin: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: 90%;
+    height: 250px;
+    margin: auto;
+
     margin-top: 20px;
   }
 
   .hotel-de-mer {
-    background-color: white;
-    width: auto;
-    height: 200px;
-    margin: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: 90%;
+    height: 250px;
+    margin: auto;
+
     margin-top: 20px;
   }
 
   .le-panier {
-    background-color: white;
-    width: auto;
-    height: 200px;
-    margin: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 7px 3px var(--clrGris);
+    width: 90%;
+    height: 250px;
+    margin: auto;
     margin-top: 20px;
   }
 
   .chez-amina {
-    background-color: white;
-    width: auto;
-    height: 200px;
-    margin: 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: 90%;
+    height: 250px;
+    margin: auto;
     margin-top: 20px;
   }
 
   .Afficher-plus {
-    margin: -10px 0 20px 30px;
+    margin: 20px 0 0 30px;
     font-size: 1.2em;
     color: #000;
     font-weight: 600;
@@ -1625,10 +2276,9 @@ footer {
   }
 
   .article h2 {
-    margin: 5px 0 0 30px;
-    font-size: 1.9em;
+    font-size: 1.5em;
     color: #000;
-    font-weight: 700;
+    font-weight: 600;
     background-color: white;
   }
 
@@ -1636,20 +2286,13 @@ footer {
     padding: 0;
     margin: 0;
     flex-flow: column;
-    width: auto;
+    width: 100%;
   }
 
   .Activites h2 {
-    margin: 30px 0 20px 20px;
-   
+    margin: 40px 0 20px 45px;
     width: auto;
-    font-size: 2em;
-    font-weight: 700;
-  }
-
-  .activites-h3 {
-    margin-left: 20px;
-    font-size: 0.8rem;
+    font-size: 1.7em;
   }
 
   .-blocFort-Pomégues {
@@ -1658,20 +2301,15 @@ footer {
   }
 
   .Vieux-Port {
-    width: 350px;
+    width: 90%;
     height: 210px;
     margin: auto;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .Îles-Frioules {
     height: 210px;
-    width: 350px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: 90%;
+
     margin: auto;
     margin-top: 30px;
   }
@@ -1683,46 +2321,33 @@ footer {
   .Notre-Dame {
     margin: auto;
     height: 210px;
-    width: 350px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+    width: 90%;
+
     margin: auto;
     margin-top: 30px;
   }
 
   .Fort-Pomégues {
     margin: auto;
-    width: 350px;
+    width: 90%;
     height: 210px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+
     margin-top: 30px;
   }
 
   .Parc-Longchamp {
-    border-radius: 20px;
-    width: 350px;
+    width: 90%;
     height: 210px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+
     margin: auto;
     margin-top: 30px;
   }
 
   .Parc-Calanques {
-    width: 350px;
+    width: 90%;
     height: 250px;
     margin: auto;
     margin-top: 30px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
   }
 
   .Vieux-Port img {
@@ -1770,14 +2395,13 @@ footer {
     bottom: 0;
     flex-direction: column;
     margin-top: 30px;
-    height: 310px;
+    height: auto;
     width: auto;
     padding: 0;
     background: var(--clrGris);
   }
 
   .footer {
-    height: auto;
     bottom: 0;
     align-content: flex-start;
     flex-flow: column;
@@ -1797,11 +2421,11 @@ footer {
   }
 }
 
-/*********vVersion iPad**********/
+/*********Version iPad**********/
+
 @media screen and (min-width: 501px) and (max-width: 768px) {
   body {
-    font-size: 0.9em;
-    width: 100%;
+    max-width: 100%;
     font-weight: 600;
   }
 
@@ -1812,7 +2436,12 @@ footer {
     height: auto;
   }
 
+  .researche .fas {
+    display: unset;
+    font-size: 1em;
+  }
   .nav {
+    font-size: 1.7vw;
     margin: 0;
     width: 100%;
     height: 90px;
@@ -1835,6 +2464,10 @@ footer {
     padding: 13px 25px;
   }
 
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
   .flexColumnBetween a:hover {
     border-top: 0;
     padding-bottom: 33px;
@@ -1844,7 +2477,7 @@ footer {
 
   .bloc_headerel {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: auto;
     flex-direction: column;
     justify-content: center;
@@ -1863,23 +2496,20 @@ footer {
     margin-bottom: 20px;
   }
 
-  .vacances {
-    width: 90%;
-    margin: 20px;
-    font-weight: 600;
-  }
   .vacances p {
     font-size: 1.2rem;
     font-weight: 500;
   }
 
   .filtre {
+    width: 650px;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: 1.9vw;
     margin: 30px 0 10px 20px;
-    width: 600px;
+
     flex-direction: row;
-    height: 100px;
+    height: 120px;
   }
   .flexrow .bloc-fas {
     margin: 0;
@@ -1887,8 +2517,12 @@ footer {
 
   .filtre h3 {
     font-size: 1.5rem;
-    margin: 10px 0;
+    margin: 10px 10px 0;
     font-weight: 600;
+  }
+
+  .iconeAside .filtreIcons {
+    width: 50px;
   }
 
   .icons-text {
@@ -1923,6 +2557,7 @@ footer {
     border-right: none;
   }
   #search .search {
+    max-width: 50%;
     padding-left: 15px;
   }
 
@@ -1936,9 +2571,6 @@ footer {
     border-radius: 30px;
     cursor: pointer;
     font-weight: 600;
-    background-image: url(images/outline_search_white_24dp.png);
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   #search {
@@ -1983,36 +2615,32 @@ footer {
     align-content: center;
     align-items: center;
     flex-flow: column-reverse;
-    width: 100%;
+    width: 98%;
     height: auto;
+    margin: auto;
   }
 
   .plusPopulaires {
+    max-width: 95%;
     font-size: 1.3em;
     align-items: center;
-    padding: 0px 30px 5px 20px;
+    padding: 0px 20px 5px 20px;
     display: flex;
     justify-content: space-between;
   }
 
   .plusPopulaireslesoleil {
-    background-color: white;
     width: auto;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
+
     margin: 15px 20px;
-    cursor: pointer;
   }
 
   .plusPopulaires-Aucoeur {
-    background-color: white;
     width: auto;
     height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
+
     margin: 20px 20px;
-    cursor: pointer;
   }
 
   .img2 {
@@ -2036,22 +2664,21 @@ footer {
   }
 
   .aside {
+    font-size: 1.8vw;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 98%;
     height: auto;
     background: var(--clrGris);
   }
 
   .elements {
-    padding-left: 20px;
+    padding-left: 10px;
     flex-wrap: wrap;
-    font-size: 1.1em;
   }
   .elements-article {
     padding-left: 15px;
     flex-wrap: wrap;
-    font-size: 1.1em;
   }
 
   h3 {
@@ -2065,8 +2692,13 @@ footer {
     padding-top: 10px;
   }
 
+  .plusimg {
+    width: 45%;
+  }
+
   #activites {
-    width: 768px;
+    width: 98vw;
+    height: 1050px;
   }
 
   .article {
@@ -2074,9 +2706,8 @@ footer {
     justify-content: center;
     justify-content: center;
     flex-flow: column;
-    width: auto;
+    width: 98%;
     height: auto;
-    overflow: hidden;
     margin-top: 15px;
     background-color: white;
   }
@@ -2087,98 +2718,79 @@ footer {
     border-radius: 15px 15px 0 0;
   }
 
+  .img2 {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  div.elements {
+    width: 55%;
+  }
+
   .hebergements {
     margin: 0 0 0 10px;
     background-color: white;
     justify-content: center;
-    width: auto;
+    width: 98%;
     height: auto;
     flex-flow: row;
   }
 
   .hebergements h3 {
-    font-size: 0.9em;
+    font-size: 1.8vw;
     padding-left: 0;
     margin: 0;
     font-weight: 600;
   }
 
   .hebergements p {
-    font-size: 0.8em;
+    font-size: 1.3vw;
     padding-left: 0;
     margin: 0;
   }
 
   .hebergements .fas {
+    font-size: 1.3vw;
     margin-bottom: 5px;
   }
 
   .auberge {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .hotel-port {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .les-mouette {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .hotel-de-mer {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .le-panier {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 7px 3px var(--clrGris);
   }
 
   .chez-amina {
-    background-color: white;
     width: 210px;
     height: auto;
     margin: 10px 10px 10px 20px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
   }
 
   .Afficher-plus {
@@ -2198,11 +2810,12 @@ footer {
   }
 
   .bloc-activites {
+    max-width: 100%;
     position: relative;
   }
 
   .activité {
-    height: 1000px;
+    height: auto;
     position: relative;
     padding: 0;
     margin: 0;
@@ -2212,7 +2825,7 @@ footer {
 
   .Activites h2 {
     margin: 30px 0 20px 20px;
-  
+
     width: auto;
     font-size: 2em;
     font-weight: 700;
@@ -2220,36 +2833,31 @@ footer {
 
   .activites-h3 {
     margin-left: 20px;
-    font-size: 0.8rem;
+    font-size: 1.6vw;
   }
 
   .-blocFort-Pomégues {
     position: absolute;
-    top: 0;
-    right: 30px;
-    width: auto;
-    margin: auto;
+    top: -20px;
+    right: -10px;
+    width: 40vw;
     height: 470px;
   }
 
   .Vieux-Port {
     position: absolute;
-    width: 350px;
+    width: 40vw;
     height: 470px;
     margin: auto;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+
     top: 30px;
     left: 40px;
   }
 
   .Îles-Frioules {
     height: 220px;
-    width: 310px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
+    width: auto;
+
     margin: auto;
     margin-top: 30px;
   }
@@ -2258,7 +2866,7 @@ footer {
     position: absolute;
     top: 500px;
     left: 20px;
-    width: 350px;
+    width: 40vw;
     height: 470px;
     margin: 20px;
   }
@@ -2266,22 +2874,15 @@ footer {
     margin: auto;
     height: 210px;
     width: auto;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
-    margin: auto;
+
     margin-top: 30px;
   }
 
   .Fort-Pomégues {
     margin: auto;
-    width: 310px;
+    width: auto;
     height: 220px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
+
     margin-top: 30px;
   }
 
@@ -2289,10 +2890,7 @@ footer {
     border-radius: 20px;
     width: auto;
     height: 210px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
-    margin: auto;
+
     margin-top: 30px;
   }
 
@@ -2300,14 +2898,9 @@ footer {
     position: absolute;
     top: 530px;
     right: 0px;
-    width: 310px;
+    width: 40vw;
     height: 450px;
     margin: 20px 30px;
-
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 5px 3px var(--clrGris);
-    cursor: pointer;
   }
 
   .Vieux-Port img {
@@ -2352,24 +2945,26 @@ footer {
   }
 
   footer {
-    bottom: 0;
+    height: auto;
+    font-size: 1vw;
     flex-direction: row;
     margin-top: 30px;
-    height: auto;
     width: auto;
     padding: 0;
     background: var(--clrGris);
   }
 
   .footer {
-    height: auto;
+    font-size: 1.3vw;
+    height: 100%;
     flex-flow: row;
     justify-content: space-between;
   }
 
   .Apropos {
+    font-size: 1.3vw;
     padding: 0;
-    margin: 20px;
+    margin: 10px 20px;
     justify-content: flex-start;
     align-content: flex-start;
   }
@@ -2378,18 +2973,59 @@ footer {
     justify-content: space-between;
   }
   .tailleBlocFoot {
+    font-size: 1.3vw;
     padding: 0;
-    margin: 20px;
+    padding-left: 40px;
+    margin: 10px;
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1450px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    max-width: 100%;
+  }
+
+  .nav {
+    font-size: 1vw;
+    width: 100vw;
+  }
+
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
+  .researche .fas {
+    display: none;
+  }
+
+  .page {
+    max-width: 98%;
+  }
+  .vacances {
+    max-width: 90%;
+  }
+
+  .page {
+    max-width: fit-content;
+  }
+  .bloc_headerel {
+    max-width: 90%;
+  }
+
+  .bloc_research {
+    max-width: 40vw;
+  }
+
+  div.filtre {
+    max-width: 80%;
+  }
+
   .article {
-    font-size: 0.7em;
-    width: 100%;
+    font-size: 1.3vw;
+    width: 58%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 600px;
+    height: 520px;
     margin-right: 20px;
     border-radius: 20px;
     padding: 20px;
@@ -2403,89 +3039,79 @@ footer {
     margin: 0 0 0 30px;
   }
   .aside {
-    width: 100%;
-    height: 600px;
+    font-size: 1.1vw;
+    width: 30%;
+    height: 520px;
     padding: 20px;
     margin-left: 15px;
     border-radius: 20px;
     background: var(--clrGris);
   }
 
+  .elements {
+    padding-left: 10px;
+  }
+
+  .aside-fas {
+    padding-top: 30px;
+  }
+
+  .aside-fas--a {
+    padding-top: 30px;
+  }
+
   .img {
     width: 100%;
-    height: 120px;
+    height: 110px;
     border-radius: 15px 15px 0 0;
   }
 
   .img2 {
     padding: 0;
     margin: 0;
-    width: 120px;
+    width: 10vw;
     height: 100%;
     border-radius: 15px 0 0 15px;
   }
 
   h4 {
-    background-color: #bebbbb;
+    background-color: var(--clrGrisfonce);
   }
 
   .auberge {
-    background-color: white;
-    width: 200px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .hotel-port {
-    background-color: white;
-    width: 200px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .les-mouette {
-    background-color: white;
-    width: 190px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .hotel-de-mer {
-    background-color: white;
-    width: 200px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .le-panier {
-    background-color: white;
-    width: 200px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .chez-amina {
-    background-color: white;
-    width: 200px;
+    width: 30%;
     height: 200px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
   }
 
   .hebergements {
+    font-size: 1.2vw;
     padding: 10px;
-    margin: 10px 0 10px 0;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -2498,7 +3124,7 @@ footer {
   }
 
   .Afficher-plus {
-    margin: 20px 0 0 30px;
+    margin: 10px 0 0 30px;
     font-size: 1.3em;
     color: #000;
     font-weight: bold;
@@ -2507,7 +3133,7 @@ footer {
   /********Aside*********/
   .plusPopulaires {
     align-items: center;
-    padding: 0px 20px 5px 20px;
+    padding: 0px 10px 5px 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -2518,71 +3144,265 @@ footer {
 
   .plusPopulaireslesoleil {
     padding: 0;
-    background-color: white;
-    width: 350px;
-    height: 150px;
-    border: 5px solid white;
+    margin: auto;
+    width: 90%;
+    height: 120px;
+
     border-radius: 20px;
-    margin: 20px 20px;
-    cursor: pointer;
   }
 
   .plusPopulaires-Aucoeur {
-    background-color: white;
-    width: 350px;
-    height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
-    margin: 20px 20px;
-
-    cursor: pointer;
+    margin: auto;
+    width: 90%;
+    height: 120px;
+    margin-top: 20px;
   }
 
   .plusPopulaires-blanc {
-    background-color: white;
-    width: 350px;
-    height: 150px;
-    border: 5px solid white;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 20px 20px;
-  }
-
-  aside {
-    font-size: 0.8em;
+    width: 90%;
+    height: 120px;
+    margin: auto;
   }
 
   .activites-h3 {
-    font-size: 0.9rem;
+    font-size: 1.5vw;
     font-weight: 600;
     padding: 0;
     margin: 0 0 0 15px;
   }
 
-  .Activites {
-    width: 100%;
-    height: auto;
-  }
-
-  #section {
-    width: 100%;
-    height: auto;
-  }
-
   footer {
+    height: 150px;
     width: 100%;
+    font-size: 1.5vw;
   }
 
   .tailleBlocFoot {
-    font-size: 0.9rem;
+    font-size: 1.5vw;
     font-weight: 700;
     margin: 0;
-    padding: 0 100px;
+    padding: 0 50px;
+    margin-bottom: 20px;
   }
 
   .Apropos {
-    padding: 0 50px 0 0;
-    font-size: 0.9rem;
+    padding: 0 20px 0 0;
+    font-size: 1.5vw;
     font-weight: 700;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1500px) {
+
+  body {
+    max-width: 100%;
+  }
+
+  .nav {
+    font-size: 1.2vw;
+    width: 100vw;
+  }
+
+  #activit.nav_a:hover {
+    color: var(--clrBleu);
+  }
+
+  .researche .fas {
+    display: none;
+  }
+
+  .page {
+    max-width: 98%;
+  }
+  .vacances {
+    max-width: 90%;
+  }
+
+  .page {
+    max-width: fit-content;
+  }
+  .bloc_headerel {
+    max-width: 90%;
+  }
+
+  .bloc_research {
+    max-width: 40vw;
+  }
+  div.filtre {
+    max-width: 80%;
+  }
+
+  .article {
+    font-size: 1vw;
+    width: 58%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 520px;
+    margin-right: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    background: var(--clrGris);
+  }
+
+  .article h2 {
+    padding: 0;
+    padding-top: 10px;
+    font-weight: bold;
+    margin: 0 0 0 30px;
+  }
+  .aside {
+    font-size: 1vw;
+    width: 30%;
+    height: 520px;
+    padding: 20px;
+    margin-left: 15px;
+    border-radius: 20px;
+    background: var(--clrGris);
+  }
+
+  .elements {
+    padding-left: 10px;
+  }
+
+  .aside-fas {
+    padding-top: 21px;
+  }
+
+  .aside-fas--a {
+    padding-top: 33px;
+  }
+
+  .img {
+    width: 100%;
+    height: 110px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .img2 {
+    padding: 0;
+    margin: 0;
+    width: 10vw;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  h4 {
+    background-color: var(--clrGrisfonce);
+  }
+
+  .auberge {
+    width: 30%;
+    height: 200px;
+  }
+
+  .hotel-port {
+    width: 30%;
+    height: 200px;
+  }
+
+  .les-mouette {
+    width: 30%;
+    height: 200px;
+  }
+
+  .hotel-de-mer {
+    width: 30%;
+    height: 200px;
+  }
+
+  .le-panier {
+    width: 30%;
+    height: 200px;
+  }
+
+  .chez-amina {
+    width: 30%;
+    height: 200px;
+  }
+
+  .hebergements {
+    font-size: 1vw;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .auberge-elements h3,
+  p {
+    font-size: 1.1vw;
+    padding: 0;
+    margin: 3px 0 3px 0;
+  }
+
+  .Afficher-plus {
+    margin: 10px 0 0 30px;
+    font-size: 1.3em;
+    color: #000;
+    font-weight: bold;
+  }
+
+  /********Aside*********/
+  .plusPopulaires {
+    align-items: center;
+    padding: 0px 10px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .plusPopulaires h2 {
+    padding-left: 5px;
+  }
+
+  .plusPopulaireslesoleil {
+    padding: 0;
+    margin: auto;
+    width: 90%;
+    height: 120px;
+
+    border-radius: 20px;
+  }
+
+  .plusPopulaires-Aucoeur {
+    margin: auto;
+    width: 90%;
+    height: 120px;
+    margin-top: 20px;
+  }
+
+  .plusPopulaires-blanc {
+    width: 90%;
+    height: 120px;
+    margin: auto;
+  }
+
+  .activites-h3 {
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 0 0 15px;
+  }
+
+  footer {
+    margin-top: 20px;
+    height: 150px;
+    width: 100%;
+    font-size: 1.5vw;
+  }
+
+  .tailleBlocFoot {
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+
+  .Apropos {
+    padding: 0 20px 0 0;
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-bottom: 20px;
   }
 }
