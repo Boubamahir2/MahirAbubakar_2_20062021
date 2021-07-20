@@ -1,3 +1,4 @@
+
 @mixin box-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   
 }
@@ -9,14 +10,14 @@
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
-  /*background-image: linear-gradient(0deg, color.scale($color-primary, $alpha: -10%) 0%, color.scale($color-secondary, $alpha: -10%) 100%);*/
+  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   cursor: pointer;
   transition-duration: 0.25s;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.25);
+  @include box-shadow;
 
   &:hover {
     background-color: white;
-    box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+    @include box-shadow;
   }
 
   a {
