@@ -71,11 +71,27 @@ body, html {
   animation-delay: 0.5s;
 }
 
+.header {
+  padding: 1rem 1rem;
+  box-sizing: border-box;
+  height: 50px;
+  position: relative;
+  z-index: 1000;
+}
+.header-logo {
+  font-family: "Shrikhand", "cursive";
+  margin: 0;
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.95);
+}
+
 .location {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
-  background: #f3f3f3;
+  background: rgba(224, 224, 224, 0.9);
   font-size: 1.2rem;
   position: relative;
 }
@@ -89,7 +105,8 @@ body, html {
 .explorer {
   padding: 2rem;
   text-align: center;
-  background: #fbfbfb;
+  background: rgba(245, 245, 245, 0.9);
+  height: 180px;
 }
 .explorer-title {
   margin: 0;
@@ -119,6 +136,15 @@ body, html {
   text-decoration: none;
   color: inherit;
 }
+@media (min-width: 280px) {
+  .explorer {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .explorer-btn {
+    font-size: 0.8rem;
+  }
+}
 
 .filtre {
   padding: 2rem 1rem;
@@ -137,12 +163,17 @@ body, html {
     display: flex;
   }
 }
+@media (min-width: 280px) {
+  .filtre {
+    padding: 1rem;
+  }
+}
 .filtre-step {
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1.25rem;
-  background-color: white;
+  background-color: rgba(245, 245, 245, 0.9);
   display: flex;
   position: relative;
 }
@@ -151,9 +182,11 @@ body, html {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
+    font-size: 1.5rem;
   }
   .filtre-step:first-child {
-    margin-left: 0.75rem;
+    margin-left: 1rem;
+    position: relative;
   }
 }
 .filtre-step:first-child {
@@ -182,39 +215,52 @@ body, html {
 }
 
 .restaurants {
-  background-color: white;
+  background-color: rgba(245, 245, 245, 0.9);
   padding: 2rem 1rem;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  column-gap: 2rem;
-  row-gap: 2rem;
+  grid-template-rows: minmax(400px, auto);
+  row-gap: 20rem;
+  grid-gap: 20px;
 }
 @media (min-width: 64rem) {
   .cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 .card {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
   color: inherit;
   display: block;
+  height: 300px;
+  margin-top: 20px;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 64rem) {
+  .card {
+    height: 700px;
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  .card-img {
+    height: 80%;
+  }
 }
 .card-img {
-  height: 12rem;
+  height: 70%;
   width: 100%;
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
-  box-shadow: none;
   object-fit: cover;
 }
-.card-badge {
+.card_badge {
   background-color: #99E2D0;
   color: #1b6150;
   padding: 0.5rem;
@@ -257,18 +303,6 @@ body, html {
   max-width: 100%;
   margin: auto;
   position: relative;
-}
-
-.header {
-  padding: 1rem 1rem;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-  position: relative;
-  z-index: 1000;
-}
-.header-logo {
-  font-family: "Shrikhand", "cursive";
-  margin: 0;
-  text-align: center;
 }
 
 .footer {
