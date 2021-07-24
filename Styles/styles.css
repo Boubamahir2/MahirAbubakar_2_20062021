@@ -215,7 +215,7 @@ body, html {
   }
 }
 .filtre-step {
-  padding: 1.5rem;
+  padding: 1rem;
   margin: 1rem 0 1.5rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 5.25rem;
@@ -234,9 +234,9 @@ body, html {
     flex: 1;
     margin: 0;
     margin-left: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     align-items: center;
-    height: 40px;
+    height: 30px;
   }
   .filtre-step i {
     position: absolute;
@@ -290,7 +290,8 @@ body, html {
 }
 @media (min-width: 64rem) {
   .restaurants {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    padding: 20px 40px;
   }
 }
 
@@ -321,7 +322,7 @@ body, html {
 @media (min-width: 64rem) {
   .card {
     height: 700px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 40px;
   }
   .card-img {
@@ -334,6 +335,11 @@ body, html {
   border: transparent solid 0px;
   border-radius: 1rem 1rem 0 0;
   object-fit: cover;
+}
+@media (min-width: 64rem) {
+  .card-img {
+    height: 80%;
+  }
 }
 .card_badge {
   background-color: #99E2D0;
@@ -363,15 +369,47 @@ body, html {
 .card-btn {
   height: 2rem;
   width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
+  background-color: black;
+  border: unset;
   padding: 0;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+@media (min-width: 64rem) {
+  .card-btn {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+.card-btn::before {
+  opacity: 0;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+}
+.card-btn:hover::before {
+  opacity: 1;
 }
 .card-like {
-  background-color: white !important;
+  transition: 0.25s;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
 }
 
 .container {
@@ -388,12 +426,23 @@ body, html {
   flex-direction: column;
   padding: 1rem;
 }
+@media (min-width: 64rem) {
+  .footer .container {
+    font-size: 1.4rem;
+    padding: 20px 40px;
+  }
+}
 .footer-logo {
   color: white;
   font-family: "Shrikhand", "cursive";
   margin: 0;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 64rem) {
+  .footer-logo {
+    font-size: 1.8rem;
+  }
 }
 .footer-listwrapper {
   list-style: none;
@@ -420,7 +469,19 @@ body, html {
   width: 1.2rem;
   margin-right: 0.5rem;
 }
+@media (min-width: 64rem) {
+  .footer-icon {
+    margin-right: 15px;
+  }
+}
 
+@media (min-width: 64rem) {
+  .fa-2x {
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: center;
+  }
+}
 @keyframes drop-down {
   0% {
     transform: scale(0);
@@ -543,7 +604,7 @@ body, html {
 }
 .menu-like {
   transition: 0.25s;
-  background-color: #f6f6f6;
+  background-color: white;
   position: absolute;
   top: 0;
   left: 0;

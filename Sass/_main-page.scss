@@ -193,7 +193,7 @@ body, html {
   }
 
   &-step {
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 1rem 0 1.5rem 0.75rem;
     @include box-shadow;
     border-radius: 5.25rem;
@@ -211,10 +211,10 @@ body, html {
       flex: 1;
       margin: 0;
       margin-left: 2rem;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       align-items: center;
      
-      height: 40px;
+      height: 30px;
       & i {
         position: absolute;
         left: 30px;
@@ -272,7 +272,8 @@ body, html {
   background-color:$backgroundlocation;
   padding: ($appPadding + 1rem) $appPadding;
   @media (min-width:64rem){
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    padding:20px 40px;
   }
 
 }
@@ -286,6 +287,8 @@ body, html {
 
   @media (min-width:64rem) {
     grid-template-columns: repeat(1, 1fr);
+   
+    
   }
 }
 
@@ -302,12 +305,14 @@ body, html {
   
   @media (min-width:64rem) {
     height: 700px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 40px;
     &-img{
       height: 80%;
     
     }
+
+    
   }
  
   &-img {
@@ -316,6 +321,9 @@ body, html {
     border: transparent solid 0px;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
+    @media (min-width:64rem){
+      height: 80%;
+    }
   }
 
   &_badge {
@@ -349,19 +357,12 @@ body, html {
   }
 
   &-btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: transparent;
-    border: transparent 0px solid;
-    padding: 0;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    @include btn;
     
   }
 
   &-like {
-    background-color: white!important;
+  @include menuLike;
   }
 }
 
@@ -379,6 +380,10 @@ body, html {
     display: flex;
     flex-direction: column;
     padding: $appPadding;
+    @media (min-width:64rem) {
+      font-size: 1.4rem;
+      padding:20px 40px ;
+    }
   }
   
   &-logo {
@@ -387,6 +392,9 @@ body, html {
     margin: 0;
     font-size: 1.2rem;
     margin-bottom: $appPadding;
+    @media (min-width:64rem) {
+      font-size: 1.8rem;
+    }
   }
 
   &-listwrapper {
@@ -419,5 +427,15 @@ body, html {
   &-icon {
     width: 1.2rem;
     margin-right: 0.5rem;
+    @media (min-width:64rem) {
+      margin-right: 15px;;
+    }
+  }
+}
+@media (min-width:64rem) {
+  .fa-2x{
+    font-size: 3rem;
+    line-height: 5rem;
+    text-align: center;
   }
 }

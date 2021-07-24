@@ -70,49 +70,12 @@
  
 
   &-btn {
-    height: 2rem;
-    width: 2rem;
-    background-color: black;
-    border: unset;
-    padding: 0;
-    display:inline-block;
-    align-items:center;
-    justify-content:center;
-    cursor: pointer;
-    position: relative;
-    @media (min-width:64rem) {
-      height: 5rem;
-      width: 5rem;
-    }
-    
-    &::before {
-      opacity: 0;
-      transition: 0.5s;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
-    }
-    &:hover::before {
-      opacity: 1;
-    }
+    @include btn;
+     
   }
  
   &-like {
-    transition: 0.25s;
-    background-color: #f6f6f6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display:inline-block;
-    align-items:center;
-    justify-content:center;
-    mix-blend-mode: lighten;
+    @include menuLike;
   }
 
   &-btn:hover {
