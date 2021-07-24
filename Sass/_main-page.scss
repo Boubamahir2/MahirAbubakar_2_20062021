@@ -59,9 +59,7 @@ body, html {
   padding: 1rem $appPadding;
   box-sizing: border-box;
   height: 50px;
-  
   position: relative;
-  z-index: 1000;
 
   &-logo {
     font-family: "Shrikhand", "cursive";
@@ -96,6 +94,19 @@ body, html {
   text-align: center;
   background: lighten($backgroundlocation,5%);
   height: 180px;
+  @media (min-width:64rem){
+    height: 250px;
+    &-title {
+      font-size:2.5rem ;
+      margin: 0;
+    }
+  
+    &-subtitle {
+      font-size: 1.5rem;
+    }
+  
+  }
+  
 
 
   &-title {
@@ -112,11 +123,21 @@ body, html {
     
   }
 
-  @media (min-width:280px){
+  @media (min-width:180px) and (max-width:63.9rem){
     font-size: 0.8rem;
     padding: 1rem;
     &-btn {
       font-size: 0.8rem;
+      
+    }
+
+  }
+
+  @media (min-width:100px) and (max-width:179px){
+    font-size: 0.5rem;
+    padding: 0.5rem;
+    &-btn {
+      font-size: 0.5rem;
       
     }
 
@@ -130,6 +151,25 @@ body, html {
 
 .filtre {
   padding: ( $appPadding + 1rem ) $appPadding;
+  margin: 20px 0;
+  @media (min-width:100px) and (max-width:179px){
+    font-size: 0.5rem;
+
+    padding: 0.5rem;
+    &-btn {
+      font-size: 0.5rem;
+      
+    }
+
+  }
+  @media (min-width:64rem) {
+   margin: 40px 0;
+   &-title {
+    font-size: 2rem;
+  }
+   
+    
+    }
 
   &-title {
     margin-top: 0;
@@ -142,38 +182,57 @@ body, html {
     counter-reset: compteListe;
 
     @media (min-width:64rem) {
-      display: flex;
+    display: flex;
+   
       
     }
     
   }
-  @media (min-width:280px) {
+  @media (min-width:180px) and (max-width:63.9rem) {
     padding: 1rem;
      
   }
 
   &-step {
     padding: 1.5rem;
-    margin: 1rem 0 1rem 0.75rem;
+    margin: 1rem 0 1.5rem 0.75rem;
     @include box-shadow;
-    border-radius: 1.25rem;
+    border-radius: 5.25rem;
     background-color: lighten($backgroundlocation, 5%);
     display: flex;
     position: relative;
+    
+    @media (min-width:180px) and (max-width:63.9rem) {
+      padding:1rem;
+      font-size: 1rem;
+         
+    }
 
     @media (min-width:64rem) {
       flex: 1;
       margin: 0;
       margin-left: 2rem;
       font-size: 1.5rem;
+      align-items: center;
+     
+      height: 40px;
+      & i {
+        position: absolute;
+        left: 30px;
+        margin: 0 10px;
+      }
+      & span {
+        position: absolute;
+        left: 65px;
+        margin: 0 10px;
+      }
+
 
       &:first-child {
         margin-left: 1rem;
         position: relative;
        
-      }
-
-      
+      } 
     }
 
     &:first-child {
@@ -197,6 +256,10 @@ body, html {
       color: white;
       position: absolute;
       left: -0.75rem;
+      @media (min-width:64rem){
+        height: 2.5rem;
+        width: 2.5rem;
+      }
     }
   }
 
@@ -209,6 +272,9 @@ body, html {
 .restaurants {
   background-color:lighten($backgroundlocation, 5%);
   padding: ($appPadding + 1rem) $appPadding;
+  @media (min-width:64rem){
+    font-size: 1.9rem;
+  }
 
 }
 
@@ -237,7 +303,7 @@ body, html {
   
   @media (min-width:64rem) {
     height: 700px;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 40px;
     &-img{
       height: 80%;
@@ -292,6 +358,7 @@ body, html {
     display:flex;
     align-items:center;
     justify-content:center;
+    
   }
 
   &-like {
