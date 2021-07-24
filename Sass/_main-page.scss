@@ -71,12 +71,11 @@ body, html {
   }
 }
 
-
 .location {
   display: flex;
   justify-content: center;
   padding: 1.25rem $appPadding;
-  background: darken($backgroundlocation, 3%);
+  background: darken($backgroundlocation, 7%);
   font-size: 1.2rem;
   position: relative;
 
@@ -92,7 +91,7 @@ body, html {
 .explorer {
   padding:2rem;
   text-align: center;
-  background: lighten($backgroundlocation,5%);
+  background: $backgroundlocation;
   height: 180px;
   @media (min-width:64rem){
     height: 250px;
@@ -198,7 +197,7 @@ body, html {
     margin: 1rem 0 1.5rem 0.75rem;
     @include box-shadow;
     border-radius: 5.25rem;
-    background-color: lighten($backgroundlocation, 5%);
+    background-color: $backgroundlocation;
     display: flex;
     position: relative;
     
@@ -270,7 +269,7 @@ body, html {
 }
 
 .restaurants {
-  background-color:lighten($backgroundlocation, 5%);
+  background-color:$backgroundlocation;
   padding: ($appPadding + 1rem) $appPadding;
   @media (min-width:64rem){
     font-size: 1.9rem;

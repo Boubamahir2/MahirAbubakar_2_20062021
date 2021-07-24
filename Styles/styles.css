@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-@keyframes itemAppear {
+@keyframes drop-down {
   0% {
     transform: scale(0);
   }
@@ -26,6 +26,14 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 body, html {
@@ -90,7 +98,7 @@ body, html {
   display: flex;
   justify-content: center;
   padding: 1.25rem 1rem;
-  background: rgba(222, 222, 222, 0.9);
+  background: #e4e4e4;
   font-size: 1.2rem;
   position: relative;
 }
@@ -104,7 +112,7 @@ body, html {
 .explorer {
   padding: 2rem;
   text-align: center;
-  background: rgba(242, 242, 242, 0.9);
+  background: #f6f6f6;
   height: 180px;
 }
 @media (min-width: 64rem) {
@@ -211,7 +219,7 @@ body, html {
   margin: 1rem 0 1.5rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 5.25rem;
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: #f6f6f6;
   display: flex;
   position: relative;
 }
@@ -277,7 +285,7 @@ body, html {
 }
 
 .restaurants {
-  background-color: rgba(242, 242, 242, 0.9);
+  background-color: #f6f6f6;
   padding: 2rem 1rem;
 }
 @media (min-width: 64rem) {
@@ -300,7 +308,7 @@ body, html {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
@@ -413,7 +421,7 @@ body, html {
   margin-right: 0.5rem;
 }
 
-@keyframes itemAppear {
+@keyframes drop-down {
   0% {
     transform: scale(0);
   }
@@ -439,6 +447,14 @@ body, html {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 .headerBackArrow {
@@ -499,7 +515,7 @@ body, html {
   background-color: black;
   border: unset;
   padding: 0;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -510,9 +526,6 @@ body, html {
     height: 5rem;
     width: 5rem;
   }
-}
-.menu-btn:hover::before {
-  opacity: 1;
 }
 .menu-btn::before {
   opacity: 0;
@@ -525,6 +538,9 @@ body, html {
   width: 100%;
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
 }
+.menu-btn:hover::before {
+  opacity: 1;
+}
 .menu-like {
   transition: 0.25s;
   background-color: #f6f6f6;
@@ -533,7 +549,7 @@ body, html {
   left: 0;
   height: 100%;
   width: 100%;
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   mix-blend-mode: lighten;
@@ -582,7 +598,7 @@ body, html {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
-  animation: itemAppear 0.6s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
+  animation: drop-down 0.6s cubic-bezier(0.5, 1.58, 0.34, 0.82) both;
   transform: scale(0);
   max-width: 100%;
 }
@@ -624,18 +640,17 @@ body, html {
   margin-right: -1rem;
 }
 .menuItem-icon-wrapper {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.7rem;
+  width: 1.7rem;
   background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 100px;
-  transform: rotate(180deg);
-  transition-duration: 0.5s;
+  transform: rotate(180deg), 0.5s ease;
 }
 .menuItem:hover .menuItem-icon-wrapper {
-  transform: rotate(0);
+  animation: rotate 0.5s ease forwards;
 }
 .menuItem-icon {
   color: #99E2D0;
@@ -671,39 +686,39 @@ body, html {
 }
 
 .delay-0 {
-  animation-delay: 0s;
+  animation-delay: 0ms;
 }
 
 .delay-1 {
-  animation-delay: 0.1s;
+  animation-delay: 100ms;
 }
 
 .delay-2 {
-  animation-delay: 0.2s;
+  animation-delay: 200ms;
 }
 
 .delay-3 {
-  animation-delay: 0.3s;
+  animation-delay: 300ms;
 }
 
 .delay-4 {
-  animation-delay: 0.4s;
+  animation-delay: 400ms;
 }
 
 .delay-5 {
-  animation-delay: 0.5s;
+  animation-delay: 500ms;
 }
 
 .delay-6 {
-  animation-delay: 0.6s;
+  animation-delay: 600ms;
 }
 
 .delay-7 {
-  animation-delay: 0.7s;
+  animation-delay: 700ms;
 }
 
 .delay-8 {
-  animation-delay: 0.8s;
+  animation-delay: 800ms;
 }
 
 /*# sourceMappingURL=styles.css.map */
