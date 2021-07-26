@@ -151,6 +151,7 @@ body, html {
 .filtre {
   padding: ( $appPadding + 1rem ) $appPadding;
   margin: 20px 0;
+  
   @media (min-width:100px) and (max-width:179px){
     font-size: 0.5rem;
 
@@ -200,7 +201,14 @@ body, html {
     background-color: $backgroundlocation;
     display: flex;
     position: relative;
-    
+    cursor: pointer;
+    &:hover{
+      background:lighten($color-primary, 35%) ;
+    }
+    &:hover> .fas{
+      color:$color-primary;
+    }
+   
     @media (min-width:180px) and (max-width:63.9rem) {
       padding:1rem;
       font-size: 1rem;
@@ -261,6 +269,7 @@ body, html {
       }
     }
   }
+ 
 
   &-icon {
     margin-right: 1rem;

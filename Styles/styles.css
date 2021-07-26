@@ -222,6 +222,13 @@ body, html {
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  cursor: pointer;
+}
+.filtre-step:hover {
+  background: #f2eafb;
+}
+.filtre-step:hover > .fas {
+  color: #9356DC;
 }
 @media (min-width: 180px) and (max-width: 63.9rem) {
   .filtre-step {
@@ -400,7 +407,7 @@ body, html {
 }
 .card-like {
   transition: 0.25s;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   top: 0;
   left: 0;
@@ -604,7 +611,7 @@ body, html {
 }
 .menu-like {
   transition: 0.25s;
-  background-color: white;
+  background-color: #f6f6f6;
   position: absolute;
   top: 0;
   left: 0;
