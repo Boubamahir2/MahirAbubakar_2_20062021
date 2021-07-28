@@ -91,10 +91,12 @@
 
 .menu-elements {
   display: grid;
+ 
 
   @media (min-width:64rem) {
     grid-template-columns: repeat(3,1fr);
     column-gap: 1rem;
+    padding-bottom: 25px;
   }
 }
 

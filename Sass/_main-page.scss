@@ -96,7 +96,7 @@ body, html {
   @media (min-width:64rem){
     height: 250px;
     &-title {
-      font-size:2.5rem ;
+      font-size:2.2rem ;
       margin: 0;
     }
   
@@ -276,7 +276,9 @@ body, html {
     color: #7e7e7e;
   }
 }
-
+#main{
+  background: white;
+}
 .restaurants {
   background-color:$backgroundlocation;
   padding: ($appPadding + 1rem) $appPadding;
@@ -384,6 +386,9 @@ body, html {
 
 .footer {
   background-color:$footercolor;
+  @media (min-width:64rem){
+    padding-top: 25px;
+  }
   
   .container {
     display: flex;
@@ -392,6 +397,8 @@ body, html {
     @media (min-width:64rem) {
       font-size: 1.4rem;
       padding:20px 40px ;
+     
+     
     }
   }
   
