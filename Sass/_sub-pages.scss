@@ -2,9 +2,11 @@
 @import "variables";
 @import "mixens";
 @import "keyframes";
-@import "loops";
 
 
+/*les sous pages */
+
+/*section pour le header les sous pages */
 .headerBackArrow{
   padding-top: 0;
   display: block;
@@ -43,7 +45,7 @@
  
 }
 
-
+/*photo de de arriere des sous pages  */
 .cover-Img{
   width: 100%;
   max-height: 32rem;
@@ -100,6 +102,7 @@
   }
 }
 
+/*section pour les menus des sous pages */
 .menu-element {
   max-width: 100%;
   overflow: hidden;
@@ -123,6 +126,7 @@
   }
 }
 
+/*section pour item des menus des sous pages */
 .menuItem {
   background-color: white;
   padding: 1rem;

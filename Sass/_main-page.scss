@@ -2,15 +2,16 @@
 @import "variables";
 @import "mixens";
 @import "keyframes";
-@import "loops";
 
+
+/*page d'accueile */
 
 body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
-
+/*section pour l'animation de chargement de la page */
 .loader {
   position: fixed;
   height: 100%;
@@ -55,6 +56,7 @@ body, html {
   
 }
 
+/*section pour le header de la page d'acueille */
 .header {
   padding: 1rem $appPadding;
   box-sizing: border-box;
@@ -71,6 +73,7 @@ body, html {
   }
 }
 
+/*section pour localisation de la page */
 .location {
   display: flex;
   justify-content: center;
@@ -88,6 +91,7 @@ body, html {
   }
 }
 
+/*section explorer */
 .explorer {
   padding:2rem;
   text-align: center;
@@ -147,7 +151,7 @@ body, html {
 }
 
 
-
+/*section pour la fonctionnement de la page */
 .filtre {
   padding: ( $appPadding + 1rem ) $appPadding;
   margin: 20px 0;
@@ -279,6 +283,8 @@ body, html {
 #main{
   background: white;
 }
+
+/*section pour les cards  des restaurants */
 .restaurants {
   background-color:$backgroundlocation;
   padding: ($appPadding + 1rem) $appPadding;
@@ -383,7 +389,7 @@ body, html {
   position: relative;
 }
 
-
+/*footer de la page */
 .footer {
   background-color:$footercolor;
   @media (min-width:64rem){

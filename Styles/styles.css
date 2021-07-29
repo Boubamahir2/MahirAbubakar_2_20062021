@@ -36,12 +36,14 @@
     transform: rotate(0deg);
   }
 }
+/*page d'accueile */
 body, html {
   margin: 0;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
 
+/*section pour l'animation de chargement de la page */
 .loader {
   position: fixed;
   height: 100%;
@@ -79,6 +81,7 @@ body, html {
   animation-delay: 0.5s;
 }
 
+/*section pour le header de la page d'acueille */
 .header {
   padding: 1rem 1rem;
   box-sizing: border-box;
@@ -94,6 +97,7 @@ body, html {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.95);
 }
 
+/*section pour localisation de la page */
 .location {
   display: flex;
   justify-content: center;
@@ -109,6 +113,7 @@ body, html {
   font-weight: 700;
 }
 
+/*section explorer */
 .explorer {
   padding: 2rem;
   text-align: center;
@@ -150,6 +155,7 @@ body, html {
 .explorer-btn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background: linear-gradient(0deg, #935cd6 0%, #ff66d4 100%);
 }
 .explorer-btn a {
   text-decoration: none;
@@ -174,6 +180,7 @@ body, html {
   }
 }
 
+/*section pour la fonctionnement de la page */
 .filtre {
   padding: 2rem 1rem;
   margin: 20px 0;
@@ -295,6 +302,7 @@ body, html {
   background: white;
 }
 
+/*section pour les cards  des restaurants */
 .restaurants {
   background-color: #f6f6f6;
   padding: 2rem 1rem;
@@ -429,6 +437,7 @@ body, html {
   position: relative;
 }
 
+/*footer de la page */
 .footer {
   background-color: #353535;
 }
@@ -534,6 +543,8 @@ body, html {
     transform: rotate(0deg);
   }
 }
+/*les sous pages */
+/*section pour le header les sous pages */
 .headerBackArrow {
   padding-top: 0;
   display: block;
@@ -564,6 +575,7 @@ body, html {
   display: inline-block;
 }
 
+/*photo de de arriere des sous pages  */
 .cover-Img {
   width: 100%;
   max-height: 32rem;
@@ -646,6 +658,7 @@ body, html {
   }
 }
 
+/*section pour les menus des sous pages */
 .menu-element {
   max-width: 100%;
   overflow: hidden;
@@ -667,6 +680,7 @@ body, html {
   bottom: 0;
 }
 
+/*section pour item des menus des sous pages */
 .menuItem {
   background-color: white;
   padding: 1rem;
@@ -757,6 +771,7 @@ body, html {
 .order-Btn:hover {
   background-color: white;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background: linear-gradient(0deg, #935cd6 0%, #ff66d4 100%);
 }
 .order-Btn a {
   text-decoration: none;
