@@ -439,12 +439,9 @@ body, html {
 
 /*footer de la page */
 .footer {
+  position: sticky;
+  top: 100%;
   background-color: #353535;
-}
-@media (min-width: 64rem) {
-  .footer {
-    padding-top: 25px;
-  }
 }
 .footer .container {
   display: flex;
@@ -507,6 +504,10 @@ body, html {
     text-align: center;
   }
 }
+.page {
+  min-height: 100vh;
+}
+
 @keyframes drop-down {
   0% {
     transform: scale(0);
@@ -590,7 +591,7 @@ body, html {
   position: relative;
 }
 .menu-header {
-  padding: 1rem 2rem 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -654,7 +655,6 @@ body, html {
   .menu-elements {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1rem;
-    padding-bottom: 25px;
   }
 }
 
