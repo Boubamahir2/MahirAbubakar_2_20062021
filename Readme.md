@@ -1,5 +1,8 @@
 # Projet_3 Openclassroom
-lienDepage: https://boubamahir2.github.io/MahirAbubakar_P3_270621/
+
+lienDepage:https://bouba-ohmyfood.netlify.app/
+
+j'ai redéployé le site sur netlify depuis github pour qu'on puise l'utiliser car github ne gere pas des sites dynamique
 
 ## Marque IDENTITE
 
