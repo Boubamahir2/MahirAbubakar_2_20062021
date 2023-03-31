@@ -10,7 +10,7 @@
   border-radius: 100px;
   color: white;
   background-color: rgb(104, 104, 104);
-  background-image:linear-gradient(0deg, lighten($color-primary, 10%), color.scale($color-secondary, $lightness: 10%));
+  background: linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
   cursor: pointer;
   transition-duration: 0.25s;
   @include box-shadow;
@@ -18,7 +18,8 @@
   &:hover {
     background-color: white;
     @include box-shadow;
-    background: linear-gradient(0deg, hsl(267, 60%, 60%) 0%,hsl(317, 100%, 70%) 100%);
+    background-image:linear-gradient(0deg, lighten($color-primary, 10%), color.scale($color-secondary, $lightness: 10%));
+    
   }
 
   a {
@@ -60,7 +61,7 @@
 
 @mixin menuLike {
   transition: 0.25s;
-    background-color:#f6f6f6;;
+   background-color:#f6f6f6;
     position: absolute;
     top: 0;
     left: 0;

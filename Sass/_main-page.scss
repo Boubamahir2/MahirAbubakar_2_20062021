@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
-@import "variables";
-@import "mixens";
-@import "keyframes";
-
+@import 'variables';
+@import 'mixens';
+@import 'keyframes';
 
 /*page d'accueile */
 
-body, html {
+body,
+html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
+  @media (min-width: 991px) and (max-width: 1350px) {
+    font-size: 0.7rem;
+  }
 }
 /*section pour l'animation de chargement de la page */
 .loader {
@@ -18,12 +21,12 @@ body, html {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(255, 255, 255, .90);
-  animation: loader 0.01s 1.75s both ;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 0.01s 1.75s both;
   z-index: 10000;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &-item {
     height: 1rem;
@@ -36,24 +39,23 @@ body, html {
       display: flex;
       width: 5rem;
       justify-content: space-between;
+      
     }
 
     &1 {
       background-color: $color-primary;
     }
-  
+
     &2 {
       background-color: $color-secondary;
       animation-delay: 0.25s;
     }
-  
+
     &3 {
       background-color: $color-tertiary;
       animation-delay: 0.5s;
     }
   }
-
-  
 }
 
 /*section pour le header de la page d'acueille */
@@ -64,7 +66,7 @@ body, html {
   position: relative;
 
   &-logo {
-    font-family: "Shrikhand", "cursive";
+    font-family: 'Shrikhand', 'cursive';
     margin: 0;
     text-align: center;
     padding: 10px 0;
@@ -93,24 +95,21 @@ body, html {
 
 /*section explorer */
 .explorer {
-  padding:2rem;
+  padding: 2rem;
   text-align: center;
   background: $backgroundlocation;
   height: 180px;
-  @media (min-width:64rem){
+  @media (min-width: 64rem) {
     height: 250px;
     &-title {
-      font-size:2.2rem ;
+      font-size: 2.2rem;
       margin: 0;
     }
-  
+
     &-subtitle {
       font-size: 1.5rem;
     }
-  
   }
-  
-
 
   &-title {
     margin: 0;
@@ -123,109 +122,95 @@ body, html {
 
   &-btn {
     @include button(primary);
-    
   }
 
-  @media (min-width:180px) and (max-width:63.9rem){
+  @media (min-width: 180px) and (max-width: 63.9rem) {
     font-size: 0.8rem;
     padding: 1rem;
     &-btn {
       font-size: 0.8rem;
-      
     }
-
   }
 
-  @media (min-width:100px) and (max-width:179px){
+  @media (min-width: 100px) and (max-width: 179px) {
     font-size: 0.5rem;
     padding: 0.5rem;
     &-btn {
       font-size: 0.5rem;
-      
     }
-
   }
-
-  
-
 }
-
 
 /*section pour la fonctionnement de la page */
 .filtre {
-  padding: ( $appPadding + 1rem ) $appPadding;
+  padding: ($appPadding + 1rem) $appPadding;
   margin: 20px 0;
+  height: 320px;
   
-  @media (min-width:100px) and (max-width:179px){
+  @media (min-width: 64rem) {
+    margin: 10px 0;
+    height: 200px;
+    &-title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (min-width: 100px) and (max-width: 179px) {
     font-size: 0.5rem;
 
     padding: 0.5rem;
     &-btn {
       font-size: 0.5rem;
-      
     }
+  }
 
+  .container{
+     @media (min-width: 768px) {
+    padding: 0 10%;
   }
-  @media (min-width:64rem) {
-   margin: 40px 0;
-   &-title {
-    font-size: 2rem;
   }
-   
-    
-    }
 
   &-title {
     margin-top: 0;
   }
 
   &-steps {
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
 
-    @media (min-width:64rem) {
-    display: flex;
-   
-      
+    @media (min-width: 64rem) {
+      display: flex;
     }
-    
-  }
-  @media (min-width:180px) and (max-width:63.9rem) {
-    padding: 1rem;
-     
   }
 
+
   &-step {
-    padding: 1rem;
+    padding: 30px 1rem;
     margin: 1rem 0 1.5rem 0.75rem;
     @include box-shadow;
-    border-radius: 5.25rem;
+    border-radius: 20px;
     background-color: $backgroundlocation;
     display: flex;
     position: relative;
     cursor: pointer;
-    &:hover{
-      background:lighten($color-primary, 35%) ;
+    &:hover {
+      background: lighten($color-primary, 35%);
     }
-    &:hover> .fas{
-      color:$color-primary;
-    }
-   
-    @media (min-width:180px) and (max-width:63.9rem) {
-      padding:1rem;
-      font-size: 1rem;
-         
+    &:hover > .fas {
+      color: $color-primary;
     }
 
-    @media (min-width:64rem) {
+   
+
+    @media (min-width: 64rem) {
       flex: 1;
       margin: 0;
       margin-left: 2rem;
       font-size: 1.3rem;
       align-items: center;
-     
+
       height: 30px;
       & i {
         position: absolute;
@@ -238,12 +223,10 @@ body, html {
         margin: 0 10px;
       }
 
-
       &:first-child {
         margin-left: 1rem;
         position: relative;
-       
-      } 
+      }
     }
 
     &:first-child {
@@ -256,7 +239,7 @@ body, html {
 
     &::before {
       counter-increment: compteListe 1;
-      content: counter(compteListe) " ";
+      content: counter(compteListe) ' ';
       background: $color-primary;
       height: 1.5rem;
       width: 1.5rem;
@@ -267,50 +250,47 @@ body, html {
       color: white;
       position: absolute;
       left: -0.75rem;
-      @media (min-width:64rem){
+      @media (min-width: 64rem) {
         height: 2.5rem;
         width: 2.5rem;
       }
     }
   }
- 
 
   &-icon {
     margin-right: 1rem;
     color: #7e7e7e;
   }
 }
-#main{
-  background: white;
-}
 
 /*section pour les cards  des restaurants */
 .restaurants {
-  background-color:$backgroundlocation;
+  background-color: $backgroundlocation;
   padding: ($appPadding + 1rem) $appPadding;
-  @media (min-width:64rem){
+  margin-bottom: 1rem;
+  @media (min-width: 64rem) {
     font-size: 1.7rem;
-    padding:20px 40px;
   }
-
+  @media (min-width: 768px) {
+     padding: 20px 10%;
+  }
 }
 
-.cards {
+.restaurants-cards {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: minmax(400px, auto);
+
   row-gap: 20rem;
   grid-gap: 20px;
 
-  @media (min-width:64rem) {
-    grid-template-columns: repeat(1, 1fr);
-   
-    
+  @media (min-width: 64rem) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
   }
 }
 
 .card {
-  background-color:lighten($backgroundlocation, 100%);
+  background-color: lighten($backgroundlocation, 100%);
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
@@ -319,26 +299,28 @@ body, html {
   height: 300px;
   margin-top: 20px;
   @include box-shadow;
+  @media (min-width: 820px) {
+    height: 450px;
+  }
   
-  @media (min-width:64rem) {
+  @media (min-width: 64rem) {
     height: 700px;
     font-size: 1.5rem;
-    margin-top: 40px;
-    &-img{
+    margin-top: 0;
+    &-img {
       height: 80%;
-    
     }
-
-    
   }
- 
+ @media (min-width: 821px) and(max-width:1400px) {
+    height: 400px;
+  }
   &-img {
     height: 70%;
     width: 100%;
     border: transparent solid 0px;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
-    @media (min-width:64rem){
+    @media (min-width: 786px) {
       height: 80%;
     }
   }
@@ -375,12 +357,15 @@ body, html {
 
   &-btn {
     @include btn;
-    
   }
 
   &-like {
-  @include menuLike;
+    @include menuLike;
   }
+}
+
+.page .card-footer i {
+  background: #fff;
 }
 
 .container {
@@ -393,30 +378,34 @@ body, html {
 .footer {
   position: sticky;
   top: 100%;
-  background-color:$footercolor;
-  @media (min-width:64rem){
-  
-  }
-  
+  background-color: $footercolor;
+
   .container {
     display: flex;
     flex-direction: column;
     padding: $appPadding;
-    @media (min-width:64rem) {
+
+    @media (min-width: 64rem) {
+      span {
+        margin: 0;
+      }
       font-size: 1.4rem;
-      padding:20px 40px ;
-     
-     
+      flex-direction: row;
+      justify-content: space-between;
     }
+
+     @media (min-width: 768px) {
+          padding: 30px 10%;
   }
-  
+  }
+
   &-logo {
     color: white;
-    font-family:$font-logo;
+    font-family: $font-logo;
     margin: 0;
     font-size: 1.2rem;
     margin-bottom: $appPadding;
-    @media (min-width:64rem) {
+    @media (min-width: 64rem) {
       font-size: 1.8rem;
     }
   }
@@ -425,10 +414,21 @@ body, html {
     list-style: none;
     padding: 0;
     margin: 0;
+    @media (min-width: 64rem) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
   }
 
   &-list {
     margin: 0.5rem 0;
+    @media (min-width: 64rem) {
+      margin: 0;
+
+      padding: 0 20px;
+    }
 
     &:first-child {
       margin-top: 0;
@@ -451,18 +451,18 @@ body, html {
   &-icon {
     width: 1.2rem;
     margin-right: 0.5rem;
-    @media (min-width:64rem) {
-      margin-right: 15px;;
+    @media (min-width: 64rem) {
+      margin-right: 15px;
     }
   }
 }
-@media (min-width:64rem) {
-  .fa-2x{
+@media (min-width: 64rem) {
+  .fa-2x {
     font-size: 3rem;
     line-height: 5rem;
     text-align: center;
   }
 }
-.page{
-  min-height:100vh ;
+.page {
+  min-height: 100vh;
 }
