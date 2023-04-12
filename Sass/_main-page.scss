@@ -9,6 +9,7 @@ body,
 html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   @media (min-width: 991px) and (max-width: 1350px) {
     font-size: 0.7rem;
@@ -145,11 +146,11 @@ html {
 .filtre {
   padding: ($appPadding + 1rem) $appPadding;
   margin: 20px 0;
-  height: 320px;
+  height: 270px;
   
   @media (min-width: 64rem) {
     margin: 10px 0;
-    height: 200px;
+    height: 170px;
     &-title {
       font-size: 2rem;
     }
@@ -187,7 +188,8 @@ html {
 
 
   &-step {
-    padding: 30px 2rem;
+    padding: 0px 2rem;
+     height: 60px;
     font-weight: 600;
     white-space: nowrap;
     margin: 1rem 0 1.5rem 1rem;
@@ -214,13 +216,14 @@ html {
    
 
     @media (min-width: 64rem) {
+       height: 80px;
       flex: 1;
       margin: 0;
       margin-left: 2rem;
       font-size: 1.3rem;
       align-items: center;
 
-      height: 30px;
+
       & i {
         position: absolute;
         left: 30px;
@@ -236,6 +239,9 @@ html {
         margin-left: 1rem;
         position: relative;
       }
+    }
+    @media (min-width: 1950) {
+height: 100px;
     }
 
     &:first-child {

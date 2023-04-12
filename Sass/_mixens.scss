@@ -1,5 +1,5 @@
 @use "sass:color";
-@mixin box-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);}
+@mixin box-shadow {box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);}
 @mixin dark-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);}
 
 @mixin button($type) {
