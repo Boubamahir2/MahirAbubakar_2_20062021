@@ -161,7 +161,7 @@ html {
 }
 .explorer-btn:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(0deg, #ae80e5, #ff86de);
 }
 .explorer-btn a {
@@ -231,20 +231,29 @@ html {
   }
 }
 .filtre-step {
-  padding: 30px 1rem;
-  margin: 1rem 0 1.5rem 0.75rem;
+  padding: 30px 2rem;
+  font-weight: 600;
+  white-space: nowrap;
+  margin: 1rem 0 1.5rem 1rem;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   background-color: #f6f6f6;
   display: flex;
   position: relative;
+  align-items: center;
   cursor: pointer;
 }
 .filtre-step:hover {
   background: #f2eafb;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 .filtre-step:hover > .fas {
   color: #9356DC;
+}
+@media (min-width: 1px) and (max-width: 300px) {
+  .filtre-step {
+    font-size: 0.8rem;
+  }
 }
 @media (min-width: 64rem) {
   .filtre-step {
@@ -297,7 +306,7 @@ html {
   }
 }
 .filtre-icon {
-  margin-right: 1rem;
+  margin-right: 0.7rem;
   color: #7e7e7e;
 }
 
@@ -341,6 +350,9 @@ html {
   height: 300px;
   margin-top: 20px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 820px) {
   .card {
@@ -751,6 +763,9 @@ html {
   transform: scale(0);
   max-width: 100%;
 }
+.menuItem:hover {
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
 .menuItem-header {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -826,7 +841,7 @@ html {
 }
 .order-Btn:hover {
   background-color: white;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(0deg, #ae80e5, #ff86de);
 }
 .order-Btn a {

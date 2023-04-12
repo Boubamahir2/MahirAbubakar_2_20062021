@@ -1,7 +1,7 @@
 @use "sass:color";
-@mixin box-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-  
-}
+@mixin box-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);}
+@mixin dark-shadow {box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.2);}
+
 @mixin button($type) {
   border: 0;
   padding: 0.75rem 1.5rem;
@@ -17,7 +17,7 @@
 
   &:hover {
     background-color: white;
-    @include box-shadow;
+    @include dark-shadow;
     background-image:linear-gradient(0deg, lighten($color-primary, 10%), color.scale($color-secondary, $lightness: 10%));
     
   }

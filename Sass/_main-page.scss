@@ -187,20 +187,29 @@ html {
 
 
   &-step {
-    padding: 30px 1rem;
-    margin: 1rem 0 1.5rem 0.75rem;
+    padding: 30px 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    margin: 1rem 0 1.5rem 1rem;
     @include box-shadow;
     border-radius: 20px;
     background-color: $backgroundlocation;
     display: flex;
     position: relative;
+    align-items: center;
     cursor: pointer;
     &:hover {
       background: lighten($color-primary, 35%);
+      @include dark-shadow;
     }
     &:hover > .fas {
       color: $color-primary;
     }
+   
+    @media (min-width: 1px) and (max-width: 300px) {
+    font-size: 0.8rem;
+    
+  }
 
    
 
@@ -258,7 +267,7 @@ html {
   }
 
   &-icon {
-    margin-right: 1rem;
+    margin-right: .7rem;
     color: #7e7e7e;
   }
 }
@@ -299,6 +308,9 @@ html {
   height: 300px;
   margin-top: 20px;
   @include box-shadow;
+   &:hover {
+      @include dark-shadow;
+    }
   @media (min-width: 820px) {
     height: 450px;
   }
@@ -311,7 +323,7 @@ html {
       height: 80%;
     }
   }
- @media (min-width: 821px) and(max-width:1400px) {
+  @media (min-width: 821px) and (max-width:1400px) {
     height: 400px;
   }
   &-img {
